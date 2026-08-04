@@ -4,11 +4,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sqlite3
 import zlib
 from collections import Counter
 from dataclasses import dataclass
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import Iterable
 
@@ -45,13 +46,6 @@ def slugify(value: str) -> str:
     return slug or "collector"
 
 
-def display_name_from_slug(value: str) -> str:
-    pieces = [part for part in value.replace("_", "-").split("-") if part]
-    if not pieces:
-        return "Collector"
-    return " ".join(piece.capitalize() for piece in pieces)
-
-
 def parse_date(value: str) -> datetime.date:
     return datetime.strptime(value, DATE_FORMAT).date()
 
@@ -62,6 +56,23 @@ def format_date_iso(date_obj) -> str:
 
 def format_date_label(date_obj) -> str:
     return date_obj.strftime("%d.%m.%Y")
+
+
+def parse_backup_date_from_name(file_name: str):
+    """Extract DD.MM.YYYY from backup filenames like KennzeichensammlerBackupX-15.07.2026."""
+    match = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", file_name)
+    if not match:
+        return None
+    try:
+        return datetime.strptime(match.group(0), DATE_FORMAT).date()
+    except ValueError:
+        return None
+
+
+def backup_sort_key(path: Path):
+    """Prefer newer embedded filename dates; fall back to filename text."""
+    parsed = parse_backup_date_from_name(path.name)
+    return (parsed is not None, parsed or date.min, path.name)
 
 
 def detect_backup_bytes(path: Path) -> bytes | None:
@@ -79,34 +90,38 @@ def detect_backup_bytes(path: Path) -> bytes | None:
 
 
 def discover_backups(root: Path) -> list[BackupSource]:
+    """Expect backups/<FriendName>/<backup-file> and name collectors from the folder."""
     backups: list[BackupSource] = []
     for path in sorted(root.rglob("*")):
         if not path.is_file():
             continue
+        if path.name.startswith("."):
+            continue
         if any(part in SITE_DIRS_TO_SKIP for part in path.parts if part != root.name):
+            continue
+        relative = path.relative_to(root)
+        # Require a friend folder: skip loose files directly under the input root.
+        if len(relative.parts) < 2:
+            continue
+        friend_token = relative.parts[0]
+        if friend_token.startswith("."):
             continue
         sqlite_bytes = detect_backup_bytes(path)
         if sqlite_bytes is None:
             continue
-        relative = path.relative_to(root)
-        if len(relative.parts) > 1:
-            friend_token = relative.parts[0]
-        else:
-            friend_token = path.name
-        friend_id = slugify(friend_token)
         backups.append(
             BackupSource(
-                friend_id=friend_id,
-                display_name=display_name_from_slug(friend_token),
+                friend_id=slugify(friend_token),
+                display_name=friend_token.strip(),
                 path=path,
             )
         )
     deduped: dict[str, BackupSource] = {}
     for backup in backups:
         existing = deduped.get(backup.friend_id)
-        if existing is None or backup.path.name > existing.path.name:
+        if existing is None or backup_sort_key(backup.path) > backup_sort_key(existing.path):
             deduped[backup.friend_id] = backup
-    return sorted(deduped.values(), key=lambda item: item.friend_id)
+    return sorted(deduped.values(), key=lambda item: item.display_name.lower())
 
 
 def fetch_rows_from_backup(path: Path) -> list[dict[str, str | int]]:
@@ -468,15 +483,20 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Generate static scoreboard data and pages from Kennzeichensammler backups.")
     parser.add_argument(
         "--input-root",
-        default=str(ROOT),
-        help="Directory to scan recursively for backup files.",
+        default=str(ROOT / "backups"),
+        help="Directory to scan recursively for backup files (default: backups/).",
     )
     args = parser.parse_args()
 
     input_root = Path(args.input_root).resolve()
+    if not input_root.exists():
+        print(f"Input root does not exist yet: {input_root}")
+        return
+
     backups = discover_backups(input_root)
     if not backups:
-        raise SystemExit("No supported backup files found.")
+        print(f"No supported backup files found under {input_root}")
+        return
 
     friend_payloads = []
     for backup in backups:

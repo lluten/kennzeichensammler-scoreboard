@@ -1,7 +1,7 @@
 {
-  "friendId": "kennzeichensammlerbackupx-15-07-2026",
-  "displayName": "Kennzeichensammlerbackupx 15.07.2026",
-  "sourceBackup": "KennzeichensammlerBackupX-15.07.2026",
+  "friendId": "jonathan",
+  "displayName": "Jonathan",
+  "sourceBackup": "backups/Jonathan/KennzeichensammlerBackupX-15.07.2026",
   "stats": {
     "totalSightings": 18,
     "uniqueKennids": 18,
@@ -158,5 +158,5 @@
     "2 land buckets represented"
   ],
   "rank": 1,
-  "profilePath": "profiles/kennzeichensammlerbackupx-15-07-2026.html"
+  "profilePath": "profiles/jonathan.html"
 }
