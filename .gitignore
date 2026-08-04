@@ -1,11 +1,18 @@
-# Python cache
+# Python
 __pycache__/
 *.pyc
 
-# Local decode scratch files
+# Local decode scratch
 .tmp_decode.sqlite
 decoded_payload.bin
 decoded_payload.sqlite
 
-# Keep the current sample backup local-only for now.
-KennzeichensammlerBackupX-15.07.2026
+# Prototype + sample Drive uploads (not needed for Pages)
+example/
+
+# Loose sample backups in repo root
+KennzeichensammlerBackupX-*
+
+# Local raw backups — Apps Script / Drive push owns remote copies
+backups/*/
+!backups/.gitkeep
