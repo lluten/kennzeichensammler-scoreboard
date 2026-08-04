@@ -7,7 +7,7 @@ function formatPercent(value) {
 }
 
 function formatDate(value) {
-  const date = new Date(value);
+  const date = new Date(`${value}T00:00:00`);
   if (Number.isNaN(date.getTime())) {
     return value;
   }
@@ -114,6 +114,26 @@ function renderStatsGrid(profile) {
       value: `${formatNumber(profile.stats.longestStreakDays)} days`,
       context: "consecutive days with at least one sighting",
     },
+    {
+      title: "Germany",
+      value: formatNumber(profile.stats.germanyUnique),
+      context: "unique districts collected",
+    },
+    {
+      title: "Europe",
+      value: formatNumber(profile.stats.europeUnique),
+      context: "unique countries / plates collected",
+    },
+    {
+      title: "USA",
+      value: formatNumber(profile.stats.usaUnique),
+      context: "unique US plates collected",
+    },
+    {
+      title: "efficiency",
+      value: formatPercent(profile.stats.discoveryEfficiency),
+      context: `repeat rate ${formatPercent(profile.stats.repeatRate)}`,
+    },
   ];
 
   cards.forEach((cardData) => {
@@ -127,32 +147,6 @@ function renderStatsGrid(profile) {
   });
 }
 
-function renderLandBreakdown(profile) {
-  const target = document.getElementById("land-breakdown");
-  if (!target) {
-    return;
-  }
-  if (!profile.landBreakdown.length) {
-    target.append(emptyState("No land breakdown available."));
-    return;
-  }
-
-  profile.landBreakdown.forEach((item) => {
-    const wrapper = createEl("div", "bar-item");
-    const header = createEl("div", "bar-item-header");
-    header.append(
-      createEl("span", "", item.land),
-      createEl("span", "", `${formatNumber(item.count)} (${formatPercent(item.share)})`)
-    );
-    const track = createEl("div", "bar-track");
-    const fill = createEl("div", "bar-fill");
-    fill.style.width = `${Math.max(item.share * 100, 3)}%`;
-    track.append(fill);
-    wrapper.append(header, track);
-    target.append(wrapper);
-  });
-}
-
 function renderHighlights(profile) {
   const target = document.getElementById("profile-highlights");
   if (!target) {
@@ -160,12 +154,6 @@ function renderHighlights(profile) {
   }
 
   const cards = [
-    {
-      title: "efficiency",
-      value: formatPercent(profile.stats.discoveryEfficiency),
-      context: "unique IDs divided by total sightings",
-      winner: `repeat rate: ${formatPercent(profile.stats.repeatRate)}`,
-    },
     {
       title: "consistency",
       value: formatPercent(profile.stats.activityConsistency),
@@ -177,6 +165,12 @@ function renderHighlights(profile) {
       value: `${formatNumber(profile.stats.bestDayBySightings.totalSightings)} logs`,
       context: profile.stats.bestDayBySightings.label,
       winner: `${formatNumber(profile.stats.bestDayByUniqueDiscoveries.newDiscoveries)} new IDs on top day`,
+    },
+    {
+      title: "avg / active day",
+      value: formatNumber(profile.stats.averageSightingsPerActiveDay),
+      context: "mean sightings on days with activity",
+      winner: `${formatNumber(profile.stats.repeatSightings)} repeats overall`,
     },
   ];
 
@@ -192,106 +186,184 @@ function renderHighlights(profile) {
   });
 }
 
-function renderDailyBreakdown(profile) {
-  const target = document.getElementById("daily-breakdown");
-  if (!target) {
-    return;
-  }
-  const series = profile.series.dailyActivity;
-  if (!series.length) {
-    target.append(emptyState("No daily data available."));
-    return;
-  }
-
-  const maxTotal = Math.max(...series.map((day) => day.totalSightings));
-  series.forEach((day) => {
-    const row = createEl("div", "daily-row");
-    const header = createEl("div", "daily-row-header");
-    header.append(
-      createEl("span", "", day.label),
-      createEl("span", "", `${day.newDiscoveries} new / ${day.repeatSightings} repeat`)
-    );
-
-    const bar = createEl("div", "daily-bar");
-    const newPart = createEl("div", "daily-bar-new");
-    const repeatPart = createEl("div", "daily-bar-repeat");
-    const emptyPart = createEl("div", "daily-bar-empty");
-    newPart.style.width = `${(day.newDiscoveries / maxTotal) * 100}%`;
-    repeatPart.style.width = `${(day.repeatSightings / maxTotal) * 100}%`;
-    emptyPart.style.width = `${((maxTotal - day.totalSightings) / maxTotal) * 100}%`;
-
-    bar.append(newPart, repeatPart, emptyPart);
-    row.append(header, bar);
-    target.append(row);
-  });
-}
-
-function buildLinePath(points) {
-  return points
-    .map((point, index) => `${index === 0 ? "M" : "L"} ${point.x.toFixed(2)} ${point.y.toFixed(2)}`)
-    .join(" ");
-}
-
-function renderActivityChart(profile) {
+function renderActivityHeatmap(profile) {
   const target = document.getElementById("activity-chart");
   if (!target) {
     return;
   }
-  const series = profile.series.dailyActivity;
-  if (!series.length) {
+
+  const days = profile.series.calendarHeatmap || [];
+  if (!days.length) {
     target.append(emptyState("No activity series available."));
     return;
   }
 
-  const width = 760;
-  const height = 280;
-  const padding = { top: 24, right: 24, bottom: 42, left: 44 };
-  const chartWidth = width - padding.left - padding.right;
-  const chartHeight = height - padding.top - padding.bottom;
-  const maxSightings = Math.max(...series.map((day) => day.cumulativeSightings));
-  const maxUnique = Math.max(...series.map((day) => day.cumulativeUniqueKennids));
+  const weeks = [];
+  for (let index = 0; index < days.length; index += 7) {
+    weeks.push(days.slice(index, index + 7));
+  }
 
-  const xForIndex = (index) => {
-    if (series.length === 1) {
-      return padding.left + chartWidth / 2;
+  const monthLabels = [];
+  let lastMonthKey = "";
+  weeks.forEach((week, weekIndex) => {
+    const firstDay = week.find(Boolean);
+    if (!firstDay) {
+      return;
     }
-    return padding.left + (index / (series.length - 1)) * chartWidth;
-  };
-  const yForValue = (value, maxValue) => {
-    if (maxValue === 0) {
-      return padding.top + chartHeight;
+    const date = new Date(`${firstDay.date}T00:00:00`);
+    const monthKey = `${date.getFullYear()}-${date.getMonth()}`;
+    if (monthKey !== lastMonthKey) {
+      monthLabels.push({
+        weekIndex,
+        label: date.toLocaleString("en", { month: "short" }),
+      });
+      lastMonthKey = monthKey;
     }
-    return padding.top + chartHeight - (value / maxValue) * chartHeight;
-  };
+  });
 
-  const sightingPoints = series.map((day, index) => ({
-    x: xForIndex(index),
-    y: yForValue(day.cumulativeSightings, maxSightings),
-  }));
-  const uniquePoints = series.map((day, index) => ({
-    x: xForIndex(index),
-    y: yForValue(day.cumulativeUniqueKennids, maxUnique),
-  }));
+  const root = createEl("div", "heatmap");
+  const months = createEl("div", "heatmap-months");
+  months.style.gridTemplateColumns = `repeat(${weeks.length}, minmax(0, 1fr))`;
+  weeks.forEach((_, weekIndex) => {
+    const label = monthLabels.find((entry) => entry.weekIndex === weekIndex);
+    months.append(createEl("span", "heatmap-month", label ? label.label : ""));
+  });
 
-  const fillPath = `${buildLinePath(sightingPoints)} L ${sightingPoints[sightingPoints.length - 1].x.toFixed(2)} ${(padding.top + chartHeight).toFixed(2)} L ${sightingPoints[0].x.toFixed(2)} ${(padding.top + chartHeight).toFixed(2)} Z`;
+  const body = createEl("div", "heatmap-body");
+  const weekdayLabels = createEl("div", "heatmap-weekdays");
+  ["", "Mon", "", "Wed", "", "Fri", ""].forEach((label) => {
+    weekdayLabels.append(createEl("span", "", label));
+  });
 
-  const lastSightings = sightingPoints[sightingPoints.length - 1];
-  const lastUnique = uniquePoints[uniquePoints.length - 1];
-  const xLabels = [series[0].label, series[series.length - 1].label];
+  const grid = createEl("div", "heatmap-grid");
+  grid.style.gridTemplateColumns = `repeat(${weeks.length}, minmax(0, 1fr))`;
 
-  target.innerHTML = `
-    <svg class="svg-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Cumulative activity chart">
-      <path class="chart-fill" d="${fillPath}"></path>
-      <line class="chart-axis" x1="${padding.left}" y1="${padding.top + chartHeight}" x2="${padding.left + chartWidth}" y2="${padding.top + chartHeight}"></line>
-      <line class="chart-axis" x1="${padding.left}" y1="${padding.top}" x2="${padding.left}" y2="${padding.top + chartHeight}"></line>
-      <path class="chart-line" d="${buildLinePath(sightingPoints)}"></path>
-      <path class="chart-line-secondary" d="${buildLinePath(uniquePoints)}"></path>
-      <text class="chart-value" x="${lastSightings.x - 6}" y="${lastSightings.y - 10}" text-anchor="end">${formatNumber(series[series.length - 1].cumulativeSightings)} total</text>
-      <text class="chart-value" x="${lastUnique.x - 6}" y="${lastUnique.y - 10}" text-anchor="end">${formatNumber(series[series.length - 1].cumulativeUniqueKennids)} unique</text>
-      <text class="chart-label" x="${padding.left}" y="${height - 12}">${xLabels[0]}</text>
-      <text class="chart-label" x="${padding.left + chartWidth}" y="${height - 12}" text-anchor="end">${xLabels[1]}</text>
-    </svg>
-  `;
+  weeks.forEach((week) => {
+    const column = createEl("div", "heatmap-week");
+    for (let dayIndex = 0; dayIndex < 7; dayIndex += 1) {
+      const day = week[dayIndex];
+      const cell = createEl("div", "heatmap-day");
+      if (!day) {
+        cell.classList.add("is-empty");
+        column.append(cell);
+        continue;
+      }
+      cell.dataset.level = String(day.level);
+      cell.title = `${day.label}: ${day.count} sighting${day.count === 1 ? "" : "s"}`;
+      column.append(cell);
+    }
+    grid.append(column);
+  });
+
+  body.append(weekdayLabels, grid);
+
+  const legend = createEl("div", "heatmap-legend");
+  legend.append(createEl("span", "", "Less"));
+  for (let level = 0; level <= 4; level += 1) {
+    const swatch = createEl("span", "heatmap-day");
+    swatch.dataset.level = String(level);
+    legend.append(swatch);
+  }
+  legend.append(createEl("span", "", "More"));
+
+  root.append(months, body, legend);
+  target.replaceChildren(root);
+}
+
+function renderRegionProgress(profile) {
+  const tabs = document.getElementById("region-tabs");
+  const panel = document.getElementById("region-panel");
+  if (!tabs || !panel) {
+    return;
+  }
+
+  const categories = ["germany", "europe", "usa"]
+    .map((id) => profile.regionCategories?.[id])
+    .filter(Boolean);
+
+  if (!categories.length) {
+    panel.append(emptyState("No region data available."));
+    return;
+  }
+
+  const defaultId =
+    categories.find((category) => category.uniqueCount > 0)?.id || categories[0].id;
+
+  function paint(activeId) {
+    tabs.replaceChildren();
+    panel.replaceChildren();
+
+    categories.forEach((category) => {
+      const completion = category.catalogTotal
+        ? `${formatNumber(category.uniqueCount)}/${formatNumber(category.catalogTotal)}`
+        : formatNumber(category.uniqueCount);
+      const button = createEl("button", "region-tab", `${category.label} (${completion})`);
+      button.type = "button";
+      button.setAttribute("role", "tab");
+      button.setAttribute("aria-selected", category.id === activeId ? "true" : "false");
+      if (category.id === activeId) {
+        button.classList.add("is-active");
+      }
+      button.addEventListener("click", () => paint(category.id));
+      tabs.append(button);
+    });
+
+    const active = categories.find((category) => category.id === activeId) || categories[0];
+    const summary = createEl("div", "region-summary");
+    const completionText =
+      active.catalogTotal != null
+        ? `${formatNumber(active.uniqueCount)} of ${formatNumber(active.catalogTotal)} catalog regions`
+        : `${formatNumber(active.uniqueCount)} unique regions`;
+    summary.append(
+      createEl(
+        "p",
+        "",
+        `${completionText} · ${formatNumber(active.totalSightings)} sightings${
+          active.completion != null ? ` · ${formatPercent(active.completion)} complete` : ""
+        }`
+      )
+    );
+    panel.append(summary);
+
+    if (!active.items.length) {
+      panel.append(emptyState(`No ${active.label} entries in this backup yet.`));
+      return;
+    }
+
+    const list = createEl("div", "bar-list region-bar-list");
+    const maxCount = Math.max(1, ...active.items.map((item) => item.count));
+    active.items.forEach((item) => {
+      const wrapper = createEl("div", "bar-item");
+      if (!item.collected && item.count === 0) {
+        wrapper.classList.add("is-missing");
+      }
+      const header = createEl("div", "bar-item-header");
+      const title = createEl("span", "region-code", item.label || item.code || String(item.kennid));
+      const metaParts = [];
+      if (item.region) {
+        metaParts.push(item.region);
+      }
+      if (item.count > 0) {
+        metaParts.push(`${formatNumber(item.count)}×`);
+        if (item.firstSeenDate) {
+          metaParts.push(`first ${formatDate(item.firstSeenDate)}`);
+        }
+      } else {
+        metaParts.push("not collected");
+      }
+      header.append(title, createEl("span", "", metaParts.join(" · ")));
+      const track = createEl("div", "bar-track");
+      const fill = createEl("div", "bar-fill");
+      const width = item.count > 0 ? Math.max((item.count / maxCount) * 100, 8) : 0;
+      fill.style.width = `${width}%`;
+      track.append(fill);
+      wrapper.append(header, track);
+      list.append(wrapper);
+    });
+    panel.append(list);
+  }
+
+  paint(defaultId);
 }
 
 async function loadJson(url) {
@@ -321,9 +393,8 @@ async function initProfile() {
   }
 
   renderStatsGrid(profile);
-  renderActivityChart(profile);
-  renderDailyBreakdown(profile);
-  renderLandBreakdown(profile);
+  renderActivityHeatmap(profile);
+  renderRegionProgress(profile);
   renderHighlights(profile);
 }
 

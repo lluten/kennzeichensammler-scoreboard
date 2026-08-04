@@ -18,37 +18,32 @@
 
         <div class="stats-grid" id="profile-stats"></div>
 
+        <section class="main-panel profile-wide-panel">
+            <div class="section-heading">
+                <h2>activity over time</h2>
+                <p>Contribution-style heatmap of daily sightings. Light tiles are inactive days.</p>
+            </div>
+            <div class="chart-card heatmap-card">
+                <div class="chart-frame heatmap-frame" id="activity-chart"></div>
+            </div>
+        </section>
+
         <div class="profile-layout">
             <section class="main-panel">
                 <div class="section-heading">
-                    <h2>activity over time</h2>
-                    <p>Cumulative progress and daily discovery momentum.</p>
+                    <h2>region progress</h2>
+                    <p>Subregions collected in the backup, grouped by Germany, Europe, and USA.</p>
                 </div>
-                <div class="chart-card">
-                    <div class="chart-frame" id="activity-chart"></div>
-                </div>
-                <div class="chart-card">
-                    <div class="section-heading compact-heading">
-                        <h2>daily breakdown</h2>
-                        <p>New discoveries vs repeat sightings for each active day.</p>
-                    </div>
-                    <div class="daily-breakdown" id="daily-breakdown"></div>
-                </div>
+                <div class="region-tabs" id="region-tabs" role="tablist" aria-label="Region categories"></div>
+                <div class="region-panel" id="region-panel"></div>
             </section>
 
             <aside class="awards-section">
                 <div class="section-heading">
                     <h2>collector snapshot</h2>
-                    <p>Derived metrics and land coverage available in the current backup schema.</p>
+                    <p>Extra metrics derived from the current backup schema.</p>
                 </div>
                 <div class="awards-list" id="profile-highlights"></div>
-                <div class="chart-card">
-                    <div class="section-heading compact-heading">
-                        <h2>land breakdown</h2>
-                        <p>Share of sightings by the available `land` field.</p>
-                    </div>
-                    <div class="bar-list" id="land-breakdown"></div>
-                </div>
             </aside>
         </div>
     </div>

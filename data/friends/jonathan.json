@@ -33,7 +33,10 @@
       "cumulativeSightings": 18,
       "cumulativeUniqueKennids": 18
     },
-    "averageSightingsPerActiveDay": 18.0
+    "averageSightingsPerActiveDay": 18.0,
+    "germanyUnique": 17,
+    "europeUnique": 1,
+    "usaUnique": 0
   },
   "landBreakdown": [
     {
@@ -47,6 +50,271 @@
       "share": 0.0556
     }
   ],
+  "regionCategories": {
+    "germany": {
+      "id": "germany",
+      "label": "Germany",
+      "uniqueCount": 17,
+      "catalogTotal": 1043,
+      "completion": 0.0163,
+      "totalSightings": 17,
+      "items": [
+        {
+          "kennid": 124,
+          "land": "deutschland",
+          "code": "B",
+          "name": "Stadt Berlin",
+          "region": "Berlin",
+          "label": "B \u2014 Stadt Berlin",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 1,
+          "share": 0.0588
+        },
+        {
+          "kennid": 488,
+          "land": "deutschland",
+          "code": "E",
+          "name": "Stadt Essen",
+          "region": "Nordrhein-Westfalen",
+          "label": "E \u2014 Stadt Essen",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 4,
+          "share": 0.0588
+        },
+        {
+          "kennid": 536,
+          "land": "deutschland",
+          "code": "EIC",
+          "name": "Landkreis Eichsfeld",
+          "region": "Th\u00fcringen",
+          "label": "EIC \u2014 Landkreis Eichsfeld",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 13,
+          "share": 0.0588
+        },
+        {
+          "kennid": 544,
+          "land": "deutschland",
+          "code": "EIN",
+          "name": "Landkreis Northeim",
+          "region": "Niedersachsen",
+          "label": "EIN \u2014 Landkreis Northeim",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 10,
+          "share": 0.0588
+        },
+        {
+          "kennid": 600,
+          "land": "deutschland",
+          "code": "ESW",
+          "name": "Werra-Mei\u00dfner-Kreis",
+          "region": "Hessen",
+          "label": "ESW \u2014 Werra-Mei\u00dfner-Kreis",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 13,
+          "share": 0.0588
+        },
+        {
+          "kennid": 992,
+          "land": "deutschland",
+          "code": "HIG",
+          "name": "Landkreis Eichsfeld",
+          "region": "Th\u00fcringen",
+          "label": "HIG \u2014 Landkreis Eichsfeld",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 10,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1012,
+          "land": "deutschland",
+          "code": "HM\u00dc",
+          "name": "Landkreis G\u00f6ttingen",
+          "region": "Niedersachsen",
+          "label": "HM\u00dc \u2014 Landkreis G\u00f6ttingen",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 10,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1032,
+          "land": "deutschland",
+          "code": "HOL",
+          "name": "Landkreis Holzminden",
+          "region": "Niedersachsen",
+          "label": "HOL \u2014 Landkreis Holzminden",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 13,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1064,
+          "land": "deutschland",
+          "code": "HSK",
+          "name": "Hochsauerlandkreis",
+          "region": "Nordrhein-Westfalen",
+          "label": "HSK \u2014 Hochsauerlandkreis",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 9,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1088,
+          "land": "deutschland",
+          "code": "HX",
+          "name": "Kreis H\u00f6xter",
+          "region": "Nordrhein-Westfalen",
+          "label": "HX \u2014 Kreis H\u00f6xter",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 12,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1144,
+          "land": "deutschland",
+          "code": "KA",
+          "name": "Stadt/Landkreis Karlsruhe",
+          "region": "Baden-W\u00fcrttemberg",
+          "label": "KA \u2014 Stadt/Landkreis Karlsruhe",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 2,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1236,
+          "land": "deutschland",
+          "code": "KS",
+          "name": "Stadt/Landkreis Kassel",
+          "region": "Hessen",
+          "label": "KS \u2014 Stadt/Landkreis Kassel",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 6,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1396,
+          "land": "deutschland",
+          "code": "M",
+          "name": "Stadt/Landkreis M\u00fcnchen",
+          "region": "Bayern",
+          "label": "M \u2014 Stadt/Landkreis M\u00fcnchen",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 1,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1608,
+          "land": "deutschland",
+          "code": "NDH",
+          "name": "Landkreis Nordhausen",
+          "region": "Th\u00fcringen",
+          "label": "NDH \u2014 Landkreis Nordhausen",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 13,
+          "share": 0.0588
+        },
+        {
+          "kennid": 1684,
+          "land": "deutschland",
+          "code": "NOM",
+          "name": "Landkreis Northeim",
+          "region": "Niedersachsen",
+          "label": "NOM \u2014 Landkreis Northeim",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 12,
+          "share": 0.0588
+        },
+        {
+          "kennid": 2360,
+          "land": "deutschland",
+          "code": "TR",
+          "name": "Stadt Trier",
+          "region": "Rheinland-Pfalz",
+          "label": "TR \u2014 Stadt Trier",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 9,
+          "share": 0.0588
+        },
+        {
+          "kennid": 2388,
+          "land": "deutschland",
+          "code": "UH",
+          "name": "Unstrut-Hainich-Kreis",
+          "region": "Th\u00fcringen",
+          "label": "UH \u2014 Unstrut-Hainich-Kreis",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 13,
+          "share": 0.0588
+        }
+      ]
+    },
+    "europe": {
+      "id": "europe",
+      "label": "Europe",
+      "uniqueCount": 1,
+      "catalogTotal": 3571,
+      "completion": 0.0003,
+      "totalSightings": 1,
+      "items": [
+        {
+          "kennid": 16,
+          "land": "laender",
+          "code": "D",
+          "name": "Deutschland",
+          "region": "",
+          "label": "D \u2014 Deutschland",
+          "count": 1,
+          "collected": true,
+          "firstSeenDate": "2026-07-15",
+          "points": 10,
+          "share": 1.0
+        }
+      ]
+    },
+    "usa": {
+      "id": "usa",
+      "label": "USA",
+      "uniqueCount": 0,
+      "catalogTotal": 393,
+      "completion": 0.0,
+      "totalSightings": 0,
+      "items": []
+    }
+  },
   "series": {
     "dailyActivity": [
       {
@@ -58,98 +326,2362 @@
         "cumulativeSightings": 18,
         "cumulativeUniqueKennids": 18
       }
+    ],
+    "calendarHeatmap": [
+      {
+        "date": "2025-07-13",
+        "label": "13.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-14",
+        "label": "14.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-15",
+        "label": "15.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-16",
+        "label": "16.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-17",
+        "label": "17.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-18",
+        "label": "18.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-19",
+        "label": "19.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-20",
+        "label": "20.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-21",
+        "label": "21.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-22",
+        "label": "22.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-23",
+        "label": "23.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-24",
+        "label": "24.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-25",
+        "label": "25.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-26",
+        "label": "26.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-27",
+        "label": "27.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-28",
+        "label": "28.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-29",
+        "label": "29.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-30",
+        "label": "30.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-31",
+        "label": "31.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-01",
+        "label": "01.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-02",
+        "label": "02.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-03",
+        "label": "03.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-04",
+        "label": "04.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-05",
+        "label": "05.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-06",
+        "label": "06.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-07",
+        "label": "07.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-08",
+        "label": "08.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-09",
+        "label": "09.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-10",
+        "label": "10.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-11",
+        "label": "11.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-12",
+        "label": "12.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-13",
+        "label": "13.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-14",
+        "label": "14.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-15",
+        "label": "15.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-16",
+        "label": "16.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-17",
+        "label": "17.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-18",
+        "label": "18.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-19",
+        "label": "19.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-20",
+        "label": "20.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-21",
+        "label": "21.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-22",
+        "label": "22.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-23",
+        "label": "23.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-24",
+        "label": "24.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-25",
+        "label": "25.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-26",
+        "label": "26.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-27",
+        "label": "27.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-28",
+        "label": "28.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-29",
+        "label": "29.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-30",
+        "label": "30.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-31",
+        "label": "31.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-01",
+        "label": "01.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-02",
+        "label": "02.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-03",
+        "label": "03.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-04",
+        "label": "04.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-05",
+        "label": "05.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-06",
+        "label": "06.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-07",
+        "label": "07.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-08",
+        "label": "08.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-09",
+        "label": "09.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-10",
+        "label": "10.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-11",
+        "label": "11.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-12",
+        "label": "12.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-13",
+        "label": "13.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-14",
+        "label": "14.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-15",
+        "label": "15.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-16",
+        "label": "16.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-17",
+        "label": "17.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-18",
+        "label": "18.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-19",
+        "label": "19.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-20",
+        "label": "20.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-21",
+        "label": "21.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-22",
+        "label": "22.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-23",
+        "label": "23.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-24",
+        "label": "24.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-25",
+        "label": "25.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-26",
+        "label": "26.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-27",
+        "label": "27.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-28",
+        "label": "28.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-29",
+        "label": "29.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-30",
+        "label": "30.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-01",
+        "label": "01.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-02",
+        "label": "02.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-03",
+        "label": "03.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-04",
+        "label": "04.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-05",
+        "label": "05.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-06",
+        "label": "06.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-07",
+        "label": "07.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-08",
+        "label": "08.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-09",
+        "label": "09.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-10",
+        "label": "10.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-11",
+        "label": "11.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-12",
+        "label": "12.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-13",
+        "label": "13.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-14",
+        "label": "14.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-15",
+        "label": "15.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-16",
+        "label": "16.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-17",
+        "label": "17.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-18",
+        "label": "18.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-19",
+        "label": "19.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-20",
+        "label": "20.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-21",
+        "label": "21.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-22",
+        "label": "22.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-23",
+        "label": "23.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-24",
+        "label": "24.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-25",
+        "label": "25.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-26",
+        "label": "26.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-27",
+        "label": "27.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-28",
+        "label": "28.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-29",
+        "label": "29.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-30",
+        "label": "30.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-31",
+        "label": "31.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-01",
+        "label": "01.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-02",
+        "label": "02.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-03",
+        "label": "03.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-04",
+        "label": "04.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-05",
+        "label": "05.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-06",
+        "label": "06.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-07",
+        "label": "07.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-08",
+        "label": "08.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-09",
+        "label": "09.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-10",
+        "label": "10.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-11",
+        "label": "11.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-12",
+        "label": "12.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-13",
+        "label": "13.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-14",
+        "label": "14.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-15",
+        "label": "15.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-16",
+        "label": "16.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-17",
+        "label": "17.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-18",
+        "label": "18.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-19",
+        "label": "19.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-20",
+        "label": "20.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-21",
+        "label": "21.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-22",
+        "label": "22.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-23",
+        "label": "23.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-24",
+        "label": "24.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-25",
+        "label": "25.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-26",
+        "label": "26.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-27",
+        "label": "27.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-28",
+        "label": "28.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-29",
+        "label": "29.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-30",
+        "label": "30.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-01",
+        "label": "01.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-02",
+        "label": "02.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-03",
+        "label": "03.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-04",
+        "label": "04.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-05",
+        "label": "05.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-06",
+        "label": "06.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-07",
+        "label": "07.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-08",
+        "label": "08.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-09",
+        "label": "09.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-10",
+        "label": "10.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-11",
+        "label": "11.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-12",
+        "label": "12.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-13",
+        "label": "13.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-14",
+        "label": "14.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-15",
+        "label": "15.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-16",
+        "label": "16.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-17",
+        "label": "17.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-18",
+        "label": "18.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-19",
+        "label": "19.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-20",
+        "label": "20.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-21",
+        "label": "21.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-22",
+        "label": "22.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-23",
+        "label": "23.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-24",
+        "label": "24.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-25",
+        "label": "25.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-26",
+        "label": "26.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-27",
+        "label": "27.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-28",
+        "label": "28.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-29",
+        "label": "29.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-30",
+        "label": "30.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-31",
+        "label": "31.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-01",
+        "label": "01.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-02",
+        "label": "02.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-03",
+        "label": "03.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-04",
+        "label": "04.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-05",
+        "label": "05.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-06",
+        "label": "06.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-07",
+        "label": "07.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-08",
+        "label": "08.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-09",
+        "label": "09.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-10",
+        "label": "10.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-11",
+        "label": "11.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-12",
+        "label": "12.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-13",
+        "label": "13.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-14",
+        "label": "14.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-15",
+        "label": "15.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-16",
+        "label": "16.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-17",
+        "label": "17.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-18",
+        "label": "18.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-19",
+        "label": "19.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-20",
+        "label": "20.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-21",
+        "label": "21.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-22",
+        "label": "22.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-23",
+        "label": "23.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-24",
+        "label": "24.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-25",
+        "label": "25.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-26",
+        "label": "26.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-27",
+        "label": "27.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-28",
+        "label": "28.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-29",
+        "label": "29.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-30",
+        "label": "30.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-31",
+        "label": "31.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-01",
+        "label": "01.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-02",
+        "label": "02.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-03",
+        "label": "03.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-04",
+        "label": "04.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-05",
+        "label": "05.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-06",
+        "label": "06.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-07",
+        "label": "07.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-08",
+        "label": "08.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-09",
+        "label": "09.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-10",
+        "label": "10.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-11",
+        "label": "11.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-12",
+        "label": "12.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-13",
+        "label": "13.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-14",
+        "label": "14.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-15",
+        "label": "15.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-16",
+        "label": "16.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-17",
+        "label": "17.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-18",
+        "label": "18.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-19",
+        "label": "19.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-20",
+        "label": "20.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-21",
+        "label": "21.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-22",
+        "label": "22.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-23",
+        "label": "23.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-24",
+        "label": "24.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-25",
+        "label": "25.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-26",
+        "label": "26.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-27",
+        "label": "27.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-28",
+        "label": "28.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-01",
+        "label": "01.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-02",
+        "label": "02.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-03",
+        "label": "03.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-04",
+        "label": "04.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-05",
+        "label": "05.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-06",
+        "label": "06.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-07",
+        "label": "07.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-08",
+        "label": "08.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-09",
+        "label": "09.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-10",
+        "label": "10.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-11",
+        "label": "11.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-12",
+        "label": "12.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-13",
+        "label": "13.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-14",
+        "label": "14.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-15",
+        "label": "15.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-16",
+        "label": "16.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-17",
+        "label": "17.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-18",
+        "label": "18.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-19",
+        "label": "19.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-20",
+        "label": "20.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-21",
+        "label": "21.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-22",
+        "label": "22.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-23",
+        "label": "23.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-24",
+        "label": "24.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-25",
+        "label": "25.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-26",
+        "label": "26.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-27",
+        "label": "27.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-28",
+        "label": "28.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-29",
+        "label": "29.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-30",
+        "label": "30.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-31",
+        "label": "31.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-01",
+        "label": "01.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-02",
+        "label": "02.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-03",
+        "label": "03.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-04",
+        "label": "04.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-05",
+        "label": "05.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-06",
+        "label": "06.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-07",
+        "label": "07.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-08",
+        "label": "08.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-09",
+        "label": "09.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-10",
+        "label": "10.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-11",
+        "label": "11.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-12",
+        "label": "12.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-13",
+        "label": "13.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-14",
+        "label": "14.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-15",
+        "label": "15.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-16",
+        "label": "16.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-17",
+        "label": "17.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-18",
+        "label": "18.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-19",
+        "label": "19.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-20",
+        "label": "20.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-21",
+        "label": "21.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-22",
+        "label": "22.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-23",
+        "label": "23.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-24",
+        "label": "24.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-25",
+        "label": "25.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-26",
+        "label": "26.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-27",
+        "label": "27.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-28",
+        "label": "28.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-29",
+        "label": "29.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-30",
+        "label": "30.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-01",
+        "label": "01.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-02",
+        "label": "02.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-03",
+        "label": "03.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-04",
+        "label": "04.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-05",
+        "label": "05.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-06",
+        "label": "06.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-07",
+        "label": "07.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-08",
+        "label": "08.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-09",
+        "label": "09.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-10",
+        "label": "10.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-11",
+        "label": "11.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-12",
+        "label": "12.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-13",
+        "label": "13.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-14",
+        "label": "14.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-15",
+        "label": "15.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-16",
+        "label": "16.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-17",
+        "label": "17.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-18",
+        "label": "18.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-19",
+        "label": "19.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-20",
+        "label": "20.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-21",
+        "label": "21.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-22",
+        "label": "22.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-23",
+        "label": "23.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-24",
+        "label": "24.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-25",
+        "label": "25.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-26",
+        "label": "26.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-27",
+        "label": "27.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-28",
+        "label": "28.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-29",
+        "label": "29.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-30",
+        "label": "30.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-31",
+        "label": "31.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-01",
+        "label": "01.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-02",
+        "label": "02.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-03",
+        "label": "03.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-04",
+        "label": "04.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-05",
+        "label": "05.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-06",
+        "label": "06.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-07",
+        "label": "07.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-08",
+        "label": "08.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-09",
+        "label": "09.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-10",
+        "label": "10.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-11",
+        "label": "11.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-12",
+        "label": "12.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-13",
+        "label": "13.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-14",
+        "label": "14.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-15",
+        "label": "15.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-16",
+        "label": "16.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-17",
+        "label": "17.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-18",
+        "label": "18.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-19",
+        "label": "19.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-20",
+        "label": "20.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-21",
+        "label": "21.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-22",
+        "label": "22.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-23",
+        "label": "23.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-24",
+        "label": "24.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-25",
+        "label": "25.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-26",
+        "label": "26.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-27",
+        "label": "27.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-28",
+        "label": "28.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-29",
+        "label": "29.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-30",
+        "label": "30.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-01",
+        "label": "01.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-02",
+        "label": "02.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-03",
+        "label": "03.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-04",
+        "label": "04.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-05",
+        "label": "05.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-06",
+        "label": "06.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-07",
+        "label": "07.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-08",
+        "label": "08.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-09",
+        "label": "09.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-10",
+        "label": "10.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-11",
+        "label": "11.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-12",
+        "label": "12.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-13",
+        "label": "13.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-14",
+        "label": "14.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-15",
+        "label": "15.07.2026",
+        "count": 18,
+        "level": 4
+      }
     ]
   },
   "firstSeenKennids": [
     {
       "kennid": 16,
       "firstSeenDate": "2026-07-15",
-      "land": "laender"
+      "land": "laender",
+      "category": "europe",
+      "label": "D \u2014 Deutschland",
+      "code": "D"
     },
     {
       "kennid": 124,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "B \u2014 Stadt Berlin",
+      "code": "B"
     },
     {
       "kennid": 488,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "E \u2014 Stadt Essen",
+      "code": "E"
     },
     {
       "kennid": 536,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "EIC \u2014 Landkreis Eichsfeld",
+      "code": "EIC"
     },
     {
       "kennid": 544,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "EIN \u2014 Landkreis Northeim",
+      "code": "EIN"
     },
     {
       "kennid": 600,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "ESW \u2014 Werra-Mei\u00dfner-Kreis",
+      "code": "ESW"
     },
     {
       "kennid": 992,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HIG \u2014 Landkreis Eichsfeld",
+      "code": "HIG"
     },
     {
       "kennid": 1012,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HM\u00dc \u2014 Landkreis G\u00f6ttingen",
+      "code": "HM\u00dc"
     },
     {
       "kennid": 1032,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HOL \u2014 Landkreis Holzminden",
+      "code": "HOL"
     },
     {
       "kennid": 1064,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HSK \u2014 Hochsauerlandkreis",
+      "code": "HSK"
     },
     {
       "kennid": 1088,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HX \u2014 Kreis H\u00f6xter",
+      "code": "HX"
     },
     {
       "kennid": 1144,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "KA \u2014 Stadt/Landkreis Karlsruhe",
+      "code": "KA"
     },
     {
       "kennid": 1236,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "KS \u2014 Stadt/Landkreis Kassel",
+      "code": "KS"
     },
     {
       "kennid": 1396,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "M \u2014 Stadt/Landkreis M\u00fcnchen",
+      "code": "M"
     },
     {
       "kennid": 1608,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "NDH \u2014 Landkreis Nordhausen",
+      "code": "NDH"
     },
     {
       "kennid": 1684,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "NOM \u2014 Landkreis Northeim",
+      "code": "NOM"
     },
     {
       "kennid": 2360,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "TR \u2014 Stadt Trier",
+      "code": "TR"
     },
     {
       "kennid": 2388,
       "firstSeenDate": "2026-07-15",
-      "land": "deutschland"
+      "land": "deutschland",
+      "category": "germany",
+      "label": "UH \u2014 Unstrut-Hainich-Kreis",
+      "code": "UH"
     }
   ],
   "recentHighlights": [
