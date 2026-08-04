@@ -1,5 +1,4 @@
 {
-  "friendId": "jonathan",
   "displayName": "Jonathan",
   "sourceBackup": "backups/Jonathan/KennzeichensammlerBackupX-15.07.2026",
   "stats": {
@@ -2726,5 +2725,6 @@
     "2 land buckets represented"
   ],
   "rank": 1,
-  "profilePath": "profiles/jonathan.html"
+  "profilePath": "profiles/jonathan.html",
+  "collectorId": "jonathan"
 }

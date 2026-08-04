@@ -1,10 +1,8 @@
 {
   "generatedAt": "2026-08-04T11:35:04Z",
-  "friendCount": 1,
   "leaderboard": [
     {
       "rank": 1,
-      "friendId": "jonathan",
       "displayName": "Jonathan",
       "profilePath": "profiles/jonathan.html",
       "stats": {
@@ -21,7 +19,8 @@
         "total sightings: 18",
         "active days: 1",
         "Germany: 17 \u00b7 Europe: 1 \u00b7 USA: 0"
-      ]
+      ],
+      "collectorId": "jonathan"
     }
   ],
   "awards": [
@@ -49,5 +48,6 @@
       "context": "unique IDs per logged sighting",
       "winner": "Jonathan"
     }
-  ]
+  ],
+  "collectorCount": 1
 }

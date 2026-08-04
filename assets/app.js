@@ -48,7 +48,7 @@ function renderLeaderboard(manifest) {
   }
 
   meta.append(
-    createEl("span", "meta-chip", `${manifest.friendCount} collector${manifest.friendCount === 1 ? "" : "s"}`),
+    createEl("span", "meta-chip", `${manifest.collectorCount} collector${manifest.collectorCount === 1 ? "" : "s"}`),
     createEl("span", "meta-chip", `updated ${manifest.generatedAt.slice(0, 10)}`)
   );
 
@@ -369,8 +369,8 @@ async function initLeaderboard() {
 }
 
 async function initProfile() {
-  const friendId = document.body.dataset.friendId;
-  const profile = await loadJson(`../data/friends/${friendId}.json`);
+  const collectorId = document.body.dataset.collectorId;
+  const profile = await loadJson(`../data/collectors/${collectorId}.json`);
 
   const title = document.getElementById("profile-title");
   const intro = document.getElementById("profile-intro");

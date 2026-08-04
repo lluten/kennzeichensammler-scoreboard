@@ -7,11 +7,11 @@
  * GitHub layout:
  *   backups/<NAME>/<same filename>
  *
- * Same filenames across friends are fine; the NAME folder keeps them apart.
- * For each friend, only the newest backup is uploaded. "Newest" is chosen from
+ * Same filenames across collectors are fine; the NAME folder keeps them apart.
+ * For each collector, only the newest backup is uploaded. "Newest" is chosen from
  * the DD.MM.YYYY date embedded in the filename (not Drive lastUpdated), because
  * shared-folder syncs often give every file the same move timestamp.
- * Older files already present under that friend's GitHub folder are removed.
+ * Older files already present under that collector's GitHub folder are removed.
  *
  * Script Properties (Project Settings -> Script Properties):
  *   GITHUB_TOKEN   required  fine-grained PAT
@@ -43,12 +43,12 @@ function pushSharedFoldersToGithub() {
   var summary = [];
 
   while (subfolders.hasNext()) {
-    var friendFolder = subfolders.next();
-    var friendName = friendFolder.getName();
-    var latest = getLatestBackupFile(friendFolder);
+    var collectorFolder = subfolders.next();
+    var collectorName = collectorFolder.getName();
+    var latest = getLatestBackupFile(collectorFolder);
 
     if (!latest) {
-      summary.push(friendName + ": no files");
+      summary.push(collectorName + ": no files");
       continue;
     }
 
@@ -56,22 +56,22 @@ function pushSharedFoldersToGithub() {
     var result = upsertGithubFile(
       repoPath,
       githubToken,
-      "backups/" + friendName + "/" + fileName,
+      "backups/" + collectorName + "/" + fileName,
       latest.getBlob().getBytes(),
-      "Auto-upload latest backup for " + friendName
+      "Auto-upload latest backup for " + collectorName
     );
 
     if (!result.ok) {
-      summary.push(friendName + ": upload failed (" + result.code + ") " + result.body);
+      summary.push(collectorName + ": upload failed (" + result.code + ") " + result.body);
       continue;
     }
 
     var cleanup = deleteOtherGithubFilesInFolder(
       repoPath,
       githubToken,
-      "backups/" + friendName,
+      "backups/" + collectorName,
       fileName,
-      "Remove older backup for " + friendName
+      "Remove older backup for " + collectorName
     );
 
     if (trashAfterSync) {
@@ -79,7 +79,7 @@ function pushSharedFoldersToGithub() {
     }
 
     summary.push(
-      friendName +
+      collectorName +
         ": uploaded " +
         fileName +
         (cleanup.deleted ? ", removed " + cleanup.deleted + " older GitHub file(s)" : "")

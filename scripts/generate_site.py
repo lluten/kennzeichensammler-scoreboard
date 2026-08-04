@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = ROOT / "index.html"
 PROFILES_DIR = ROOT / "profiles"
 DATA_DIR = ROOT / "data"
-FRIENDS_DIR = DATA_DIR / "friends"
+COLLECTORS_DIR = DATA_DIR / "collectors"
 CATALOG_PATH = DATA_DIR / "catalog.db"
 
 # Backup `land` values mapped into the three profile tabs.
@@ -227,7 +227,7 @@ class RegionCatalog:
 
 @dataclass
 class BackupSource:
-    friend_id: str
+    collector_id: str
     display_name: str
     path: Path
 
@@ -292,7 +292,7 @@ def detect_backup_bytes(path: Path) -> bytes | None:
 
 
 def discover_backups(root: Path) -> list[BackupSource]:
-    """Expect backups/<FriendName>/<backup-file> and name collectors from the folder."""
+    """Expect backups/<CollectorName>/<backup-file> and name collectors from the folder."""
     backups: list[BackupSource] = []
     for path in sorted(root.rglob("*")):
         if not path.is_file():
@@ -302,27 +302,27 @@ def discover_backups(root: Path) -> list[BackupSource]:
         if any(part in SITE_DIRS_TO_SKIP for part in path.parts if part != root.name):
             continue
         relative = path.relative_to(root)
-        # Require a friend folder: skip loose files directly under the input root.
+        # Require a collector folder: skip loose files directly under the input root.
         if len(relative.parts) < 2:
             continue
-        friend_token = relative.parts[0]
-        if friend_token.startswith("."):
+        collector_token = relative.parts[0]
+        if collector_token.startswith("."):
             continue
         sqlite_bytes = detect_backup_bytes(path)
         if sqlite_bytes is None:
             continue
         backups.append(
             BackupSource(
-                friend_id=slugify(friend_token),
-                display_name=friend_token.strip(),
+                collector_id=slugify(collector_token),
+                display_name=collector_token.strip(),
                 path=path,
             )
         )
     deduped: dict[str, BackupSource] = {}
     for backup in backups:
-        existing = deduped.get(backup.friend_id)
+        existing = deduped.get(backup.collector_id)
         if existing is None or backup_sort_key(backup.path) > backup_sort_key(existing.path):
-            deduped[backup.friend_id] = backup
+            deduped[backup.collector_id] = backup
     return sorted(deduped.values(), key=lambda item: item.display_name.lower())
 
 
@@ -506,8 +506,8 @@ def build_region_categories(parsed_rows: list[dict], catalog: RegionCatalog) -> 
     return categories
 
 
-def build_friend_stats(
-    friend_id: str,
+def build_collector_stats(
+    collector_id: str,
     display_name: str,
     rows: list[dict[str, str | int]],
     catalog: RegionCatalog,
@@ -590,7 +590,7 @@ def build_friend_stats(
     calendar_heatmap = build_calendar_heatmap(sightings_per_day, last_date)
 
     profile = {
-        "friendId": friend_id,
+        "collectorId": collector_id,
         "displayName": display_name,
         "sourceBackup": "",
         "stats": {
@@ -632,12 +632,12 @@ def build_friend_stats(
     return profile
 
 
-def build_awards(friends: list[dict]) -> list[dict]:
-    if not friends:
+def build_awards(collectors: list[dict]) -> list[dict]:
+    if not collectors:
         return []
 
     def winner(metric_name: str, title: str, context: str, formatter):
-        champ = max(friends, key=lambda friend: friend["stats"][metric_name])
+        champ = max(collectors, key=lambda collector: collector["stats"][metric_name])
         return {
             "title": title,
             "value": formatter(champ["stats"][metric_name]),
@@ -672,47 +672,47 @@ def build_awards(friends: list[dict]) -> list[dict]:
     return [unique_champion, total_activity, streak_champion, efficiency_champion]
 
 
-def build_manifest(friends: list[dict]) -> dict:
+def build_manifest(collectors: list[dict]) -> dict:
     ranked = sorted(
-        friends,
-        key=lambda friend: (
-            -friend["stats"]["uniqueKennids"],
-            -friend["stats"]["totalSightings"],
-            friend["displayName"].lower(),
+        collectors,
+        key=lambda collector: (
+            -collector["stats"]["uniqueKennids"],
+            -collector["stats"]["totalSightings"],
+            collector["displayName"].lower(),
         ),
     )
-    for index, friend in enumerate(ranked, start=1):
-        friend["rank"] = index
-        friend["profilePath"] = f"profiles/{friend['friendId']}.html"
+    for index, collector in enumerate(ranked, start=1):
+        collector["rank"] = index
+        collector["profilePath"] = f"profiles/{collector['collectorId']}.html"
 
     leaderboard = [
         {
-            "rank": friend["rank"],
-            "friendId": friend["friendId"],
-            "displayName": friend["displayName"],
-            "profilePath": friend["profilePath"],
+            "rank": collector["rank"],
+            "collectorId": collector["collectorId"],
+            "displayName": collector["displayName"],
+            "profilePath": collector["profilePath"],
             "stats": {
-                "uniqueKennids": friend["stats"]["uniqueKennids"],
-                "totalSightings": friend["stats"]["totalSightings"],
-                "activeDays": friend["stats"]["activeDays"],
-                "lastSeenDate": friend["stats"]["lastSeenDate"],
-                "newDiscoveries": friend["stats"]["newDiscoveries"],
-                "repeatRate": friend["stats"]["repeatRate"],
-                "discoveryEfficiency": friend["stats"]["discoveryEfficiency"],
+                "uniqueKennids": collector["stats"]["uniqueKennids"],
+                "totalSightings": collector["stats"]["totalSightings"],
+                "activeDays": collector["stats"]["activeDays"],
+                "lastSeenDate": collector["stats"]["lastSeenDate"],
+                "newDiscoveries": collector["stats"]["newDiscoveries"],
+                "repeatRate": collector["stats"]["repeatRate"],
+                "discoveryEfficiency": collector["stats"]["discoveryEfficiency"],
             },
             "hoverInfo": [
-                f"unique Kennzeichen IDs: {friend['stats']['uniqueKennids']}",
-                f"total sightings: {friend['stats']['totalSightings']}",
-                f"active days: {friend['stats']['activeDays']}",
-                f"Germany: {friend['stats']['germanyUnique']} · Europe: {friend['stats']['europeUnique']} · USA: {friend['stats']['usaUnique']}",
+                f"unique Kennzeichen IDs: {collector['stats']['uniqueKennids']}",
+                f"total sightings: {collector['stats']['totalSightings']}",
+                f"active days: {collector['stats']['activeDays']}",
+                f"Germany: {collector['stats']['germanyUnique']} · Europe: {collector['stats']['europeUnique']} · USA: {collector['stats']['usaUnique']}",
             ],
         }
-        for friend in ranked
+        for collector in ranked
     ]
 
     return {
         "generatedAt": datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-        "friendCount": len(ranked),
+        "collectorCount": len(ranked),
         "leaderboard": leaderboard,
         "awards": build_awards(ranked),
     }
@@ -767,7 +767,7 @@ def render_index_html() -> str:
 """
 
 
-def render_profile_html(friend_id: str) -> str:
+def render_profile_html(collector_id: str) -> str:
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -776,7 +776,7 @@ def render_profile_html(friend_id: str) -> str:
     <title>collector profile</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-page="profile" data-friend-id="{friend_id}">
+<body data-page="profile" data-collector-id="{collector_id}">
     <div class="container">
         <a href="../index.html" class="back-link">back to leaderboard</a>
 
@@ -824,11 +824,11 @@ def render_profile_html(friend_id: str) -> str:
 """
 
 
-def write_static_pages(manifest: dict, friend_payloads: list[dict]) -> None:
+def write_static_pages(manifest: dict, collector_payloads: list[dict]) -> None:
     INDEX_PATH.write_text(render_index_html(), encoding="utf-8")
-    for friend in friend_payloads:
-        profile_path = PROFILES_DIR / f"{friend['friendId']}.html"
-        profile_path.write_text(render_profile_html(friend["friendId"]), encoding="utf-8")
+    for collector in collector_payloads:
+        profile_path = PROFILES_DIR / f"{collector['collectorId']}.html"
+        profile_path.write_text(render_profile_html(collector["collectorId"]), encoding="utf-8")
 
 
 def main() -> None:
@@ -856,30 +856,30 @@ def main() -> None:
     else:
         print(f"Warning: catalog not found or empty at {CATALOG_PATH}")
 
-    friend_payloads = []
+    collector_payloads = []
     for backup in backups:
         rows = fetch_rows_from_backup(backup.path)
-        payload = build_friend_stats(backup.friend_id, backup.display_name, rows, catalog)
+        payload = build_collector_stats(backup.collector_id, backup.display_name, rows, catalog)
         payload["sourceBackup"] = str(backup.path.relative_to(ROOT))
-        friend_payloads.append(payload)
+        collector_payloads.append(payload)
 
-    manifest = build_manifest(friend_payloads)
+    manifest = build_manifest(collector_payloads)
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    FRIENDS_DIR.mkdir(parents=True, exist_ok=True)
+    COLLECTORS_DIR.mkdir(parents=True, exist_ok=True)
     PROFILES_DIR.mkdir(parents=True, exist_ok=True)
 
-    for old_json in FRIENDS_DIR.glob("*.json"):
+    for old_json in COLLECTORS_DIR.glob("*.json"):
         old_json.unlink()
     for old_profile in PROFILES_DIR.glob("*.html"):
         old_profile.unlink()
 
-    for friend in friend_payloads:
-        write_json(FRIENDS_DIR / f"{friend['friendId']}.json", friend)
+    for collector in collector_payloads:
+        write_json(COLLECTORS_DIR / f"{collector['collectorId']}.json", collector)
     write_json(DATA_DIR / "manifest.json", manifest)
-    write_static_pages(manifest, friend_payloads)
+    write_static_pages(manifest, collector_payloads)
 
-    print(f"Generated site data for {len(friend_payloads)} collector(s).")
+    print(f"Generated site data for {len(collector_payloads)} collector(s).")
 
 
 if __name__ == "__main__":
