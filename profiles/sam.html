@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collector profile</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="profile" data-collector-id="sam">
+    <div class="container">
+        <a href="../index.html" class="back-link">back to leaderboard</a>
+
+        <header class="profile-header">
+            <p class="eyebrow">collector profile</p>
+            <h1 id="profile-title">Collector statistics</h1>
+            <p class="page-intro" id="profile-intro">Build-time statistics derived from the latest committed backup file.</p>
+        </header>
+
+        <div class="stats-grid" id="profile-stats"></div>
+
+        <section class="main-panel profile-wide-panel">
+            <div class="section-heading">
+                <h2>activity over time</h2>
+                <p>Contribution-style heatmap of daily sightings. Light tiles are inactive days.</p>
+            </div>
+            <div class="chart-card heatmap-card">
+                <div class="chart-frame heatmap-frame" id="activity-chart"></div>
+            </div>
+        </section>
+
+        <div class="profile-layout">
+            <section class="main-panel">
+                <div class="section-heading">
+                    <h2>region progress</h2>
+                    <p>Subregions collected in the backup, grouped by Germany, Europe, and USA.</p>
+                </div>
+                <div class="region-tabs" id="region-tabs" role="tablist" aria-label="Region categories"></div>
+                <div class="region-panel" id="region-panel"></div>
+            </section>
+
+            <aside class="awards-section">
+                <div class="section-heading">
+                    <h2>collector snapshot</h2>
+                    <p>Extra metrics derived from the current backup schema.</p>
+                </div>
+                <div class="awards-list" id="profile-highlights"></div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4946 @@
+{
+  "collectorId": "mia",
+  "displayName": "Mia",
+  "sourceBackup": "backups/Mia/KennzeichensammlerBackupX-03.08.2026",
+  "stats": {
+    "totalSightings": 88,
+    "uniqueKennids": 85,
+    "activeDays": 69,
+    "firstSeenDate": "2026-01-16",
+    "lastSeenDate": "2026-07-31",
+    "spanDays": 197,
+    "repeatSightings": 3,
+    "repeatRate": 0.0341,
+    "newDiscoveries": 85,
+    "discoveryEfficiency": 0.9659,
+    "activityConsistency": 0.3503,
+    "longestStreakDays": 5,
+    "bestDayBySightings": {
+      "date": "2026-06-30",
+      "label": "30.06.2026",
+      "totalSightings": 3,
+      "newDiscoveries": 3,
+      "repeatSightings": 0,
+      "cumulativeSightings": 78,
+      "cumulativeUniqueKennids": 76
+    },
+    "bestDayByUniqueDiscoveries": {
+      "date": "2026-06-30",
+      "label": "30.06.2026",
+      "totalSightings": 3,
+      "newDiscoveries": 3,
+      "repeatSightings": 0,
+      "cumulativeSightings": 78,
+      "cumulativeUniqueKennids": 76
+    },
+    "averageSightingsPerActiveDay": 1.28,
+    "germanyUnique": 45,
+    "europeUnique": 35,
+    "usaUnique": 8
+  },
+  "landBreakdown": [
+    {
+      "land": "deutschland",
+      "count": 45,
+      "share": 0.5114
+    },
+    {
+      "land": "laender",
+      "count": 35,
+      "share": 0.3977
+    },
+    {
+      "land": "usa",
+      "count": 8,
+      "share": 0.0909
+    }
+  ],
+  "regionCategories": {
+    "germany": {
+      "id": "germany",
+      "label": "Germany",
+      "uniqueCount": 45,
+      "catalogTotal": 829,
+      "completion": 0.0543,
+      "totalSightings": 45,
+      "items": [
+        {
+          "kennid": 2772,
+          "land": "deutschland",
+          "code": "AL",
+          "name": "Landkreis Altena",
+          "region": "Nordrhein-Westfalen",
+          "label": "AL \u2014 Landkreis Altena",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-01-17",
+          "points": 15,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 148,
+          "land": "deutschland",
+          "code": "BBL",
+          "name": "Brandenburg, Landesregierung, Landtag und Polizei",
+          "region": "Brandenburg",
+          "label": "BBL \u2014 Brandenburg, Landesregierung, Landtag und Polizei",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-16",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 152,
+          "land": "deutschland",
+          "code": "BC",
+          "name": "Landkreis Biberach",
+          "region": "Baden-W\u00fcrttemberg",
+          "label": "BC \u2014 Landkreis Biberach",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-23",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2692,
+          "land": "deutschland",
+          "code": "BD1",
+          "name": "Deutscher Bundestag",
+          "region": "Bundesweit",
+          "label": "BD1 \u2014 Deutscher Bundestag",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-05",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 188,
+          "land": "deutschland",
+          "code": "BID",
+          "name": "Landkreis Marburg-Biedenkopf",
+          "region": "Hessen",
+          "label": "BID \u2014 Landkreis Marburg-Biedenkopf",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-17",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 232,
+          "land": "deutschland",
+          "code": "BNA",
+          "name": "Landkreis Leipzig",
+          "region": "Sachsen",
+          "label": "BNA \u2014 Landkreis Leipzig",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-10",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 528,
+          "land": "deutschland",
+          "code": "EG",
+          "name": "Landkreis Rottal-Inn",
+          "region": "Bayern",
+          "label": "EG \u2014 Landkreis Rottal-Inn",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-30",
+          "points": 12,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 788,
+          "land": "deutschland",
+          "code": "GM",
+          "name": "Oberbergischer Kreis",
+          "region": "Nordrhein-Westfalen",
+          "label": "GM \u2014 Oberbergischer Kreis",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-01",
+          "points": 9,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 812,
+          "land": "deutschland",
+          "code": "GOH",
+          "name": "Rhein-Lahn-Kreis",
+          "region": "Rheinland-Pfalz",
+          "label": "GOH \u2014 Rhein-Lahn-Kreis",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-22",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 828,
+          "land": "deutschland",
+          "code": "GRH",
+          "name": "Landkreis Mei\u00dfen",
+          "region": "Sachsen",
+          "label": "GRH \u2014 Landkreis Mei\u00dfen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-01",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 804,
+          "land": "deutschland",
+          "code": "G\u00d6",
+          "name": "Stadt/Landkreis G\u00f6ttingen",
+          "region": "Niedersachsen",
+          "label": "G\u00d6 \u2014 Stadt/Landkreis G\u00f6ttingen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-22",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 976,
+          "land": "deutschland",
+          "code": "HGW",
+          "name": "Stadt Greifswald",
+          "region": "Mecklenburg-Vorpommern",
+          "label": "HGW \u2014 Stadt Greifswald",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-06",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1020,
+          "land": "deutschland",
+          "code": "HO",
+          "name": "Stadt/Landkreis Hof (Saale)",
+          "region": "Bayern",
+          "label": "HO \u2014 Stadt/Landkreis Hof (Saale)",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-28",
+          "points": 12,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1044,
+          "land": "deutschland",
+          "code": "HOT",
+          "name": "Landkreis Zwickau",
+          "region": "Sachsen",
+          "label": "HOT \u2014 Landkreis Zwickau",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-10",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2900,
+          "land": "deutschland",
+          "code": "HZ",
+          "name": "Landkreis Herzberg",
+          "region": "Brandenburg",
+          "label": "HZ \u2014 Landkreis Herzberg",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-20",
+          "points": 15,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1112,
+          "land": "deutschland",
+          "code": "ILL",
+          "name": "Landkreis Neu-Ulm",
+          "region": "Bayern",
+          "label": "ILL \u2014 Landkreis Neu-Ulm",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-24",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2932,
+          "land": "deutschland",
+          "code": "LAN",
+          "name": "Landkreis Dingolfing-Landau",
+          "region": "Bayern",
+          "label": "LAN \u2014 Landkreis Dingolfing-Landau",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-01-29",
+          "points": 15,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1336,
+          "land": "deutschland",
+          "code": "LL",
+          "name": "Landkreis Landsberg am Lech",
+          "region": "Bayern",
+          "label": "LL \u2014 Landkreis Landsberg am Lech",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-10",
+          "points": 12,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1340,
+          "land": "deutschland",
+          "code": "LM",
+          "name": "Landkreis Limburg-Weilburg",
+          "region": "Hessen",
+          "label": "LM \u2014 Landkreis Limburg-Weilburg",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-11",
+          "points": 11,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1580,
+          "land": "deutschland",
+          "code": "MYK",
+          "name": "Landkreis Mayen-Koblenz",
+          "region": "Rheinland-Pfalz",
+          "label": "MYK \u2014 Landkreis Mayen-Koblenz",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-24",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1632,
+          "land": "deutschland",
+          "code": "NES",
+          "name": "Landkreis Rh\u00f6n-Grabfeld",
+          "region": "Bayern",
+          "label": "NES \u2014 Landkreis Rh\u00f6n-Grabfeld",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-01",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1648,
+          "land": "deutschland",
+          "code": "NI",
+          "name": "Landkreis Nienburg/Weser",
+          "region": "Niedersachsen",
+          "label": "NI \u2014 Landkreis Nienburg/Weser",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-30",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1680,
+          "land": "deutschland",
+          "code": "NOL",
+          "name": "Landkreis G\u00f6rlitz",
+          "region": "Sachsen",
+          "label": "NOL \u2014 Landkreis G\u00f6rlitz",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-01-24",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1744,
+          "land": "deutschland",
+          "code": "OC",
+          "name": "Landkreis B\u00f6rde",
+          "region": "Sachsen-Anhalt",
+          "label": "OC \u2014 Landkreis B\u00f6rde",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-18",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1756,
+          "land": "deutschland",
+          "code": "OE",
+          "name": "Kreis Olpe",
+          "region": "Nordrhein-Westfalen",
+          "label": "OE \u2014 Kreis Olpe",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-07",
+          "points": 12,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 3056,
+          "land": "deutschland",
+          "code": "OP",
+          "name": "Stadt Leverkusen",
+          "region": "Nordrhein-Westfalen",
+          "label": "OP \u2014 Stadt Leverkusen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-30",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1816,
+          "land": "deutschland",
+          "code": "P",
+          "name": "Stadt Potsdam",
+          "region": "Brandenburg",
+          "label": "P \u2014 Stadt Potsdam",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-15",
+          "points": 13,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1832,
+          "land": "deutschland",
+          "code": "PAR",
+          "name": "Landkreis Kelheim",
+          "region": "Bayern",
+          "label": "PAR \u2014 Landkreis Kelheim",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-13",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1852,
+          "land": "deutschland",
+          "code": "PF",
+          "name": "Stadt Pforzheim",
+          "region": "Baden-W\u00fcrttemberg",
+          "label": "PF \u2014 Stadt Pforzheim",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-16",
+          "points": 8,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1908,
+          "land": "deutschland",
+          "code": "R",
+          "name": "Stadt/Landkreis Regensburg",
+          "region": "Bayern",
+          "label": "R \u2014 Stadt/Landkreis Regensburg",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-14",
+          "points": 7,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1924,
+          "land": "deutschland",
+          "code": "RDG",
+          "name": "Landkreis Vorpommern-R\u00fcgen",
+          "region": "Mecklenburg-Vorpommern",
+          "label": "RDG \u2014 Landkreis Vorpommern-R\u00fcgen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-09",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1932,
+          "land": "deutschland",
+          "code": "REG",
+          "name": "Landkreis Regen",
+          "region": "Bayern",
+          "label": "REG \u2014 Landkreis Regen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-14",
+          "points": 13,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 3084,
+          "land": "deutschland",
+          "code": "REI",
+          "name": "Landkreis Berchtesgadener Land",
+          "region": "Bayern",
+          "label": "REI \u2014 Landkreis Berchtesgadener Land",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-29",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1952,
+          "land": "deutschland",
+          "code": "RID",
+          "name": "Landkreis Kelheim",
+          "region": "Bayern",
+          "label": "RID \u2014 Landkreis Kelheim",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-12",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 3092,
+          "land": "deutschland",
+          "code": "ROH",
+          "name": "Landkreis Rotenburg in Hannover",
+          "region": "Niedersachsen",
+          "label": "ROH \u2014 Landkreis Rotenburg in Hannover",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-30",
+          "points": 15,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2020,
+          "land": "deutschland",
+          "code": "RU",
+          "name": "Landkreis Saalfeld-Rudolstadt",
+          "region": "Th\u00fcringen",
+          "label": "RU \u2014 Landkreis Saalfeld-Rudolstadt",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-29",
+          "points": 13,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2028,
+          "land": "deutschland",
+          "code": "R\u00dcG",
+          "name": "Landkreis Vorpommern-R\u00fcgen",
+          "region": "Mecklenburg-Vorpommern",
+          "label": "R\u00dcG \u2014 Landkreis Vorpommern-R\u00fcgen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-06",
+          "points": 11,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2140,
+          "land": "deutschland",
+          "code": "SHA",
+          "name": "Landkreis Schw\u00e4bisch Hall",
+          "region": "Baden-W\u00fcrttemberg",
+          "label": "SHA \u2014 Landkreis Schw\u00e4bisch Hall",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-25",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2144,
+          "land": "deutschland",
+          "code": "SHG",
+          "name": "Landkreis Schaumburg",
+          "region": "Niedersachsen",
+          "label": "SHG \u2014 Landkreis Schaumburg",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-05",
+          "points": 13,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2164,
+          "land": "deutschland",
+          "code": "SIM",
+          "name": "Rhein-Hunsr\u00fcck-Kreis",
+          "region": "Rheinland-Pfalz",
+          "label": "SIM \u2014 Rhein-Hunsr\u00fcck-Kreis",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-12",
+          "points": 14,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 3132,
+          "land": "deutschland",
+          "code": "ST",
+          "name": "Landkreis Stade",
+          "region": "Niedersachsen",
+          "label": "ST \u2014 Landkreis Stade",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-01",
+          "points": 15,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2504,
+          "land": "deutschland",
+          "code": "WER",
+          "name": "Landkreis Dillingen an der Donau",
+          "region": "Bayern",
+          "label": "WER \u2014 Landkreis Dillingen an der Donau",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-03",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2580,
+          "land": "deutschland",
+          "code": "WOL",
+          "name": "Ortenaukreis",
+          "region": "Baden-W\u00fcrttemberg",
+          "label": "WOL \u2014 Ortenaukreis",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-16",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2636,
+          "land": "deutschland",
+          "code": "WUN",
+          "name": "Landkreis Wunsiedel im Fichtelgebirge",
+          "region": "Bayern",
+          "label": "WUN \u2014 Landkreis Wunsiedel im Fichtelgebirge",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-14",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 2644,
+          "land": "deutschland",
+          "code": "WW",
+          "name": "Westerwaldkreis",
+          "region": "Rheinland-Pfalz",
+          "label": "WW \u2014 Westerwaldkreis",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-31",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        }
+      ]
+    },
+    "europe": {
+      "id": "europe",
+      "label": "Europe",
+      "uniqueCount": 35,
+      "catalogTotal": 3947,
+      "completion": 0.0089,
+      "totalSightings": 35,
+      "items": [
+        {
+          "kennid": 68,
+          "land": "laender",
+          "code": "A",
+          "name": "\u00d6sterreich",
+          "region": "",
+          "label": "A \u2014 \u00d6sterreich",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-01-18",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 112,
+          "land": "laender",
+          "code": "AL",
+          "name": "Albanien",
+          "region": "",
+          "label": "AL \u2014 Albanien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-01-30",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 116,
+          "land": "laender",
+          "code": "AND",
+          "name": "Andorra",
+          "region": "",
+          "label": "AND \u2014 Andorra",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-06",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 8,
+          "land": "laender",
+          "code": "B",
+          "name": "Belgien",
+          "region": "",
+          "label": "B \u2014 Belgien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-01-24",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 184,
+          "land": "laender",
+          "code": "BY",
+          "name": "Belarus",
+          "region": "",
+          "label": "BY \u2014 Belarus",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-23",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 160,
+          "land": "laender",
+          "code": "CH",
+          "name": "Schweiz",
+          "region": "",
+          "label": "CH \u2014 Schweiz",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-06",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 108,
+          "land": "laender",
+          "code": "CY",
+          "name": "Zypern",
+          "region": "",
+          "label": "CY \u2014 Zypern",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-30",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 100,
+          "land": "laender",
+          "code": "CZ",
+          "name": "Tschechien",
+          "region": "",
+          "label": "CZ \u2014 Tschechien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-22",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 4,
+          "land": "laender",
+          "code": "DK",
+          "name": "D\u00e4nemark",
+          "region": "",
+          "label": "DK \u2014 D\u00e4nemark",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-18",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 20,
+          "land": "laender",
+          "code": "EST",
+          "name": "Estland",
+          "region": "",
+          "label": "EST \u2014 Estland",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-28",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 28,
+          "land": "laender",
+          "code": "F",
+          "name": "Frankreich",
+          "region": "",
+          "label": "F \u2014 Frankreich",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-08",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 24,
+          "land": "laender",
+          "code": "FIN",
+          "name": "Finnland",
+          "region": "",
+          "label": "FIN \u2014 Finnland",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-18",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 128,
+          "land": "laender",
+          "code": "FL",
+          "name": "Liechtenstein",
+          "region": "",
+          "label": "FL \u2014 Liechtenstein",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-02",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 192,
+          "land": "laender",
+          "code": "GE",
+          "name": "Georgien",
+          "region": "",
+          "label": "GE \u2014 Georgien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-18",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 32,
+          "land": "laender",
+          "code": "GR",
+          "name": "Griechenland",
+          "region": "",
+          "label": "GR \u2014 Griechenland",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-30",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 44,
+          "land": "laender",
+          "code": "HR",
+          "name": "Kroatien",
+          "region": "",
+          "label": "HR \u2014 Kroatien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-27",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 40,
+          "land": "laender",
+          "code": "I",
+          "name": "Italien",
+          "region": "",
+          "label": "I \u2014 Italien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-01-16",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 52,
+          "land": "laender",
+          "code": "LT",
+          "name": "Litauen",
+          "region": "",
+          "label": "LT \u2014 Litauen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-08",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 60,
+          "land": "laender",
+          "code": "M",
+          "name": "Malta",
+          "region": "",
+          "label": "M \u2014 Malta",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-08",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 136,
+          "land": "laender",
+          "code": "MC",
+          "name": "Monaco",
+          "region": "",
+          "label": "MC \u2014 Monaco",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-14",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 132,
+          "land": "laender",
+          "code": "MD",
+          "name": "Republik Moldau",
+          "region": "",
+          "label": "MD \u2014 Republik Moldau",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-01-21",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 148,
+          "land": "laender",
+          "code": "N",
+          "name": "Norwegen",
+          "region": "",
+          "label": "N \u2014 Norwegen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-09",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 64,
+          "land": "laender",
+          "code": "NL",
+          "name": "Niederlande",
+          "region": "",
+          "label": "NL \u2014 Niederlande",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-22",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 144,
+          "land": "laender",
+          "code": "NMK",
+          "name": "Nordmazedonien",
+          "region": "",
+          "label": "NMK \u2014 Nordmazedonien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-28",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 76,
+          "land": "laender",
+          "code": "P",
+          "name": "Portugal",
+          "region": "",
+          "label": "P \u2014 Portugal",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-24",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 72,
+          "land": "laender",
+          "code": "PL",
+          "name": "Polen",
+          "region": "",
+          "label": "PL \u2014 Polen",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-08",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 188,
+          "land": "laender",
+          "code": "RKS",
+          "name": "Kosovo",
+          "region": "",
+          "label": "RKS \u2014 Kosovo",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-19",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 80,
+          "land": "laender",
+          "code": "RO",
+          "name": "Rum\u00e4nien",
+          "region": "",
+          "label": "RO \u2014 Rum\u00e4nien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-30",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 152,
+          "land": "laender",
+          "code": "RUS",
+          "name": "Russland",
+          "region": "",
+          "label": "RUS \u2014 Russland",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-14",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 84,
+          "land": "laender",
+          "code": "S",
+          "name": "Schweden",
+          "region": "",
+          "label": "S \u2014 Schweden",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-07-25",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 88,
+          "land": "laender",
+          "code": "SK",
+          "name": "Slowakei",
+          "region": "",
+          "label": "SK \u2014 Slowakei",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-06",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 92,
+          "land": "laender",
+          "code": "SLO",
+          "name": "Slowenien",
+          "region": "",
+          "label": "SLO \u2014 Slowenien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-04-13",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 164,
+          "land": "laender",
+          "code": "SRB",
+          "name": "Serbien",
+          "region": "",
+          "label": "SRB \u2014 Serbien",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-21",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 168,
+          "land": "laender",
+          "code": "TR",
+          "name": "T\u00fcrkei",
+          "region": "",
+          "label": "TR \u2014 T\u00fcrkei",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-04",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 172,
+          "land": "laender",
+          "code": "UA",
+          "name": "Ukraine",
+          "region": "",
+          "label": "UA \u2014 Ukraine",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-05",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        }
+      ]
+    },
+    "usa": {
+      "id": "usa",
+      "label": "USA",
+      "uniqueCount": 8,
+      "catalogTotal": 393,
+      "completion": 0.0204,
+      "totalSightings": 8,
+      "items": [
+        {
+          "kennid": 560,
+          "land": "usa",
+          "code": "AL14",
+          "name": "Chilton County",
+          "region": "Alabama",
+          "label": "AL14 \u2014 Chilton County",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-13",
+          "points": 9,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 540,
+          "land": "usa",
+          "code": "AL9",
+          "name": "Bullock County",
+          "region": "Alabama",
+          "label": "AL9 \u2014 Bullock County",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-15",
+          "points": 11,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 936,
+          "land": "usa",
+          "code": "MT41",
+          "name": "McCone County",
+          "region": "Montana",
+          "label": "MT41 \u2014 McCone County",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-28",
+          "points": 13,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1084,
+          "land": "usa",
+          "code": "NE22",
+          "name": "Saline County",
+          "region": "Nebraska",
+          "label": "NE22 \u2014 Saline County",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-02-02",
+          "points": 11,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1028,
+          "land": "usa",
+          "code": "NE8",
+          "name": "Hall County",
+          "region": "Nebraska",
+          "label": "NE8 \u2014 Hall County",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-03-15",
+          "points": 9,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1428,
+          "land": "usa",
+          "code": "SD15",
+          "name": "Butte County",
+          "region": "South Dakota",
+          "label": "SD15 \u2014 Butte County",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-22",
+          "points": 11,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1612,
+          "land": "usa",
+          "code": "SD61",
+          "name": "Turner County",
+          "region": "South Dakota",
+          "label": "SD61 \u2014 Turner County",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-06-18",
+          "points": 11,
+          "progress": 1.0,
+          "share": 1.0
+        },
+        {
+          "kennid": 1396,
+          "land": "usa",
+          "code": "SD7",
+          "name": "Yankton County",
+          "region": "South Dakota",
+          "label": "SD7 \u2014 Yankton County",
+          "count": 1,
+          "collected": true,
+          "countable": true,
+          "firstSeenDate": "2026-05-11",
+          "points": 10,
+          "progress": 1.0,
+          "share": 1.0
+        }
+      ]
+    }
+  },
+  "series": {
+    "dailyActivity": [
+      {
+        "date": "2026-01-16",
+        "label": "16.01.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 1,
+        "cumulativeUniqueKennids": 1
+      },
+      {
+        "date": "2026-01-17",
+        "label": "17.01.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 2,
+        "cumulativeUniqueKennids": 2
+      },
+      {
+        "date": "2026-01-18",
+        "label": "18.01.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 3,
+        "cumulativeUniqueKennids": 3
+      },
+      {
+        "date": "2026-01-21",
+        "label": "21.01.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 4,
+        "cumulativeUniqueKennids": 4
+      },
+      {
+        "date": "2026-01-24",
+        "label": "24.01.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 6,
+        "cumulativeUniqueKennids": 6
+      },
+      {
+        "date": "2026-01-29",
+        "label": "29.01.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 7,
+        "cumulativeUniqueKennids": 7
+      },
+      {
+        "date": "2026-01-30",
+        "label": "30.01.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 8,
+        "cumulativeUniqueKennids": 8
+      },
+      {
+        "date": "2026-02-02",
+        "label": "02.02.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 9,
+        "cumulativeUniqueKennids": 9
+      },
+      {
+        "date": "2026-02-06",
+        "label": "06.02.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 11,
+        "cumulativeUniqueKennids": 11
+      },
+      {
+        "date": "2026-02-09",
+        "label": "09.02.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 13,
+        "cumulativeUniqueKennids": 13
+      },
+      {
+        "date": "2026-02-15",
+        "label": "15.02.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 14,
+        "cumulativeUniqueKennids": 14
+      },
+      {
+        "date": "2026-02-16",
+        "label": "16.02.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 0,
+        "repeatSightings": 1,
+        "cumulativeSightings": 15,
+        "cumulativeUniqueKennids": 14
+      },
+      {
+        "date": "2026-02-18",
+        "label": "18.02.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 16,
+        "cumulativeUniqueKennids": 15
+      },
+      {
+        "date": "2026-02-24",
+        "label": "24.02.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 18,
+        "cumulativeUniqueKennids": 17
+      },
+      {
+        "date": "2026-02-28",
+        "label": "28.02.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 20,
+        "cumulativeUniqueKennids": 19
+      },
+      {
+        "date": "2026-03-01",
+        "label": "01.03.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 22,
+        "cumulativeUniqueKennids": 21
+      },
+      {
+        "date": "2026-03-04",
+        "label": "04.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 23,
+        "cumulativeUniqueKennids": 22
+      },
+      {
+        "date": "2026-03-05",
+        "label": "05.03.2026",
+        "totalSightings": 3,
+        "newDiscoveries": 3,
+        "repeatSightings": 0,
+        "cumulativeSightings": 26,
+        "cumulativeUniqueKennids": 25
+      },
+      {
+        "date": "2026-03-06",
+        "label": "06.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 27,
+        "cumulativeUniqueKennids": 26
+      },
+      {
+        "date": "2026-03-07",
+        "label": "07.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 28,
+        "cumulativeUniqueKennids": 27
+      },
+      {
+        "date": "2026-03-08",
+        "label": "08.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 29,
+        "cumulativeUniqueKennids": 28
+      },
+      {
+        "date": "2026-03-10",
+        "label": "10.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 30,
+        "cumulativeUniqueKennids": 29
+      },
+      {
+        "date": "2026-03-12",
+        "label": "12.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 31,
+        "cumulativeUniqueKennids": 30
+      },
+      {
+        "date": "2026-03-13",
+        "label": "13.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 32,
+        "cumulativeUniqueKennids": 31
+      },
+      {
+        "date": "2026-03-15",
+        "label": "15.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 33,
+        "cumulativeUniqueKennids": 32
+      },
+      {
+        "date": "2026-03-16",
+        "label": "16.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 34,
+        "cumulativeUniqueKennids": 33
+      },
+      {
+        "date": "2026-03-17",
+        "label": "17.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 35,
+        "cumulativeUniqueKennids": 34
+      },
+      {
+        "date": "2026-03-18",
+        "label": "18.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 36,
+        "cumulativeUniqueKennids": 35
+      },
+      {
+        "date": "2026-03-21",
+        "label": "21.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 37,
+        "cumulativeUniqueKennids": 36
+      },
+      {
+        "date": "2026-03-22",
+        "label": "22.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 38,
+        "cumulativeUniqueKennids": 37
+      },
+      {
+        "date": "2026-03-30",
+        "label": "30.03.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 39,
+        "cumulativeUniqueKennids": 38
+      },
+      {
+        "date": "2026-04-01",
+        "label": "01.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 40,
+        "cumulativeUniqueKennids": 39
+      },
+      {
+        "date": "2026-04-03",
+        "label": "03.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 41,
+        "cumulativeUniqueKennids": 40
+      },
+      {
+        "date": "2026-04-11",
+        "label": "11.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 42,
+        "cumulativeUniqueKennids": 41
+      },
+      {
+        "date": "2026-04-13",
+        "label": "13.04.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 44,
+        "cumulativeUniqueKennids": 43
+      },
+      {
+        "date": "2026-04-14",
+        "label": "14.04.2026",
+        "totalSightings": 3,
+        "newDiscoveries": 3,
+        "repeatSightings": 0,
+        "cumulativeSightings": 47,
+        "cumulativeUniqueKennids": 46
+      },
+      {
+        "date": "2026-04-16",
+        "label": "16.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 48,
+        "cumulativeUniqueKennids": 47
+      },
+      {
+        "date": "2026-04-18",
+        "label": "18.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 49,
+        "cumulativeUniqueKennids": 48
+      },
+      {
+        "date": "2026-04-22",
+        "label": "22.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 50,
+        "cumulativeUniqueKennids": 49
+      },
+      {
+        "date": "2026-04-23",
+        "label": "23.04.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 52,
+        "cumulativeUniqueKennids": 51
+      },
+      {
+        "date": "2026-04-25",
+        "label": "25.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 53,
+        "cumulativeUniqueKennids": 52
+      },
+      {
+        "date": "2026-04-29",
+        "label": "29.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 54,
+        "cumulativeUniqueKennids": 53
+      },
+      {
+        "date": "2026-04-30",
+        "label": "30.04.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 55,
+        "cumulativeUniqueKennids": 54
+      },
+      {
+        "date": "2026-05-06",
+        "label": "06.05.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 56,
+        "cumulativeUniqueKennids": 55
+      },
+      {
+        "date": "2026-05-08",
+        "label": "08.05.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 57,
+        "cumulativeUniqueKennids": 56
+      },
+      {
+        "date": "2026-05-11",
+        "label": "11.05.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 58,
+        "cumulativeUniqueKennids": 57
+      },
+      {
+        "date": "2026-05-12",
+        "label": "12.05.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 59,
+        "cumulativeUniqueKennids": 58
+      },
+      {
+        "date": "2026-05-14",
+        "label": "14.05.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 1,
+        "repeatSightings": 1,
+        "cumulativeSightings": 61,
+        "cumulativeUniqueKennids": 59
+      },
+      {
+        "date": "2026-05-15",
+        "label": "15.05.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 62,
+        "cumulativeUniqueKennids": 60
+      },
+      {
+        "date": "2026-05-22",
+        "label": "22.05.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 64,
+        "cumulativeUniqueKennids": 62
+      },
+      {
+        "date": "2026-05-28",
+        "label": "28.05.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 66,
+        "cumulativeUniqueKennids": 64
+      },
+      {
+        "date": "2026-06-02",
+        "label": "02.06.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 67,
+        "cumulativeUniqueKennids": 65
+      },
+      {
+        "date": "2026-06-08",
+        "label": "08.06.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 68,
+        "cumulativeUniqueKennids": 66
+      },
+      {
+        "date": "2026-06-10",
+        "label": "10.06.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 69,
+        "cumulativeUniqueKennids": 67
+      },
+      {
+        "date": "2026-06-18",
+        "label": "18.06.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 71,
+        "cumulativeUniqueKennids": 69
+      },
+      {
+        "date": "2026-06-20",
+        "label": "20.06.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 72,
+        "cumulativeUniqueKennids": 70
+      },
+      {
+        "date": "2026-06-22",
+        "label": "22.06.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 73,
+        "cumulativeUniqueKennids": 71
+      },
+      {
+        "date": "2026-06-24",
+        "label": "24.06.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 74,
+        "cumulativeUniqueKennids": 72
+      },
+      {
+        "date": "2026-06-27",
+        "label": "27.06.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 75,
+        "cumulativeUniqueKennids": 73
+      },
+      {
+        "date": "2026-06-30",
+        "label": "30.06.2026",
+        "totalSightings": 3,
+        "newDiscoveries": 3,
+        "repeatSightings": 0,
+        "cumulativeSightings": 78,
+        "cumulativeUniqueKennids": 76
+      },
+      {
+        "date": "2026-07-01",
+        "label": "01.07.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 79,
+        "cumulativeUniqueKennids": 77
+      },
+      {
+        "date": "2026-07-06",
+        "label": "06.07.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 80,
+        "cumulativeUniqueKennids": 78
+      },
+      {
+        "date": "2026-07-08",
+        "label": "08.07.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 81,
+        "cumulativeUniqueKennids": 79
+      },
+      {
+        "date": "2026-07-10",
+        "label": "10.07.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 82,
+        "cumulativeUniqueKennids": 80
+      },
+      {
+        "date": "2026-07-19",
+        "label": "19.07.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 0,
+        "repeatSightings": 1,
+        "cumulativeSightings": 83,
+        "cumulativeUniqueKennids": 80
+      },
+      {
+        "date": "2026-07-25",
+        "label": "25.07.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 84,
+        "cumulativeUniqueKennids": 81
+      },
+      {
+        "date": "2026-07-29",
+        "label": "29.07.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 85,
+        "cumulativeUniqueKennids": 82
+      },
+      {
+        "date": "2026-07-30",
+        "label": "30.07.2026",
+        "totalSightings": 2,
+        "newDiscoveries": 2,
+        "repeatSightings": 0,
+        "cumulativeSightings": 87,
+        "cumulativeUniqueKennids": 84
+      },
+      {
+        "date": "2026-07-31",
+        "label": "31.07.2026",
+        "totalSightings": 1,
+        "newDiscoveries": 1,
+        "repeatSightings": 0,
+        "cumulativeSightings": 88,
+        "cumulativeUniqueKennids": 85
+      }
+    ],
+    "calendarHeatmap": [
+      {
+        "date": "2025-07-27",
+        "label": "27.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-28",
+        "label": "28.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-29",
+        "label": "29.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-30",
+        "label": "30.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-31",
+        "label": "31.07.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-01",
+        "label": "01.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-02",
+        "label": "02.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-03",
+        "label": "03.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-04",
+        "label": "04.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-05",
+        "label": "05.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-06",
+        "label": "06.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-07",
+        "label": "07.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-08",
+        "label": "08.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-09",
+        "label": "09.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-10",
+        "label": "10.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-11",
+        "label": "11.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-12",
+        "label": "12.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-13",
+        "label": "13.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-14",
+        "label": "14.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-15",
+        "label": "15.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-16",
+        "label": "16.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-17",
+        "label": "17.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-18",
+        "label": "18.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-19",
+        "label": "19.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-20",
+        "label": "20.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-21",
+        "label": "21.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-22",
+        "label": "22.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-23",
+        "label": "23.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-24",
+        "label": "24.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-25",
+        "label": "25.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-26",
+        "label": "26.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-27",
+        "label": "27.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-28",
+        "label": "28.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-29",
+        "label": "29.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-30",
+        "label": "30.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-31",
+        "label": "31.08.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-01",
+        "label": "01.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-02",
+        "label": "02.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-03",
+        "label": "03.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-04",
+        "label": "04.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-05",
+        "label": "05.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-06",
+        "label": "06.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-07",
+        "label": "07.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-08",
+        "label": "08.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-09",
+        "label": "09.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-10",
+        "label": "10.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-11",
+        "label": "11.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-12",
+        "label": "12.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-13",
+        "label": "13.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-14",
+        "label": "14.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-15",
+        "label": "15.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-16",
+        "label": "16.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-17",
+        "label": "17.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-18",
+        "label": "18.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-19",
+        "label": "19.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-20",
+        "label": "20.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-21",
+        "label": "21.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-22",
+        "label": "22.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-23",
+        "label": "23.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-24",
+        "label": "24.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-25",
+        "label": "25.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-26",
+        "label": "26.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-27",
+        "label": "27.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-28",
+        "label": "28.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-29",
+        "label": "29.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-30",
+        "label": "30.09.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-01",
+        "label": "01.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-02",
+        "label": "02.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-03",
+        "label": "03.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-04",
+        "label": "04.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-05",
+        "label": "05.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-06",
+        "label": "06.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-07",
+        "label": "07.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-08",
+        "label": "08.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-09",
+        "label": "09.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-10",
+        "label": "10.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-11",
+        "label": "11.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-12",
+        "label": "12.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-13",
+        "label": "13.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-14",
+        "label": "14.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-15",
+        "label": "15.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-16",
+        "label": "16.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-17",
+        "label": "17.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-18",
+        "label": "18.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-19",
+        "label": "19.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-20",
+        "label": "20.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-21",
+        "label": "21.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-22",
+        "label": "22.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-23",
+        "label": "23.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-24",
+        "label": "24.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-25",
+        "label": "25.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-26",
+        "label": "26.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-27",
+        "label": "27.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-28",
+        "label": "28.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-29",
+        "label": "29.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-30",
+        "label": "30.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-31",
+        "label": "31.10.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-01",
+        "label": "01.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-02",
+        "label": "02.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-03",
+        "label": "03.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-04",
+        "label": "04.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-05",
+        "label": "05.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-06",
+        "label": "06.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-07",
+        "label": "07.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-08",
+        "label": "08.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-09",
+        "label": "09.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-10",
+        "label": "10.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-11",
+        "label": "11.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-12",
+        "label": "12.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-13",
+        "label": "13.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-14",
+        "label": "14.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-15",
+        "label": "15.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-16",
+        "label": "16.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-17",
+        "label": "17.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-18",
+        "label": "18.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-19",
+        "label": "19.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-20",
+        "label": "20.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-21",
+        "label": "21.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-22",
+        "label": "22.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-23",
+        "label": "23.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-24",
+        "label": "24.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-25",
+        "label": "25.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-26",
+        "label": "26.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-27",
+        "label": "27.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-28",
+        "label": "28.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-29",
+        "label": "29.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-30",
+        "label": "30.11.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-01",
+        "label": "01.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-02",
+        "label": "02.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-03",
+        "label": "03.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-04",
+        "label": "04.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-05",
+        "label": "05.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-06",
+        "label": "06.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-07",
+        "label": "07.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-08",
+        "label": "08.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-09",
+        "label": "09.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-10",
+        "label": "10.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-11",
+        "label": "11.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-12",
+        "label": "12.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-13",
+        "label": "13.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-14",
+        "label": "14.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-15",
+        "label": "15.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-16",
+        "label": "16.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-17",
+        "label": "17.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-18",
+        "label": "18.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-19",
+        "label": "19.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-20",
+        "label": "20.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-21",
+        "label": "21.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-22",
+        "label": "22.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-23",
+        "label": "23.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-24",
+        "label": "24.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-25",
+        "label": "25.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-26",
+        "label": "26.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-27",
+        "label": "27.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-28",
+        "label": "28.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-29",
+        "label": "29.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-30",
+        "label": "30.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-31",
+        "label": "31.12.2025",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-01",
+        "label": "01.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-02",
+        "label": "02.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-03",
+        "label": "03.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-04",
+        "label": "04.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-05",
+        "label": "05.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-06",
+        "label": "06.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-07",
+        "label": "07.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-08",
+        "label": "08.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-09",
+        "label": "09.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-10",
+        "label": "10.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-11",
+        "label": "11.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-12",
+        "label": "12.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-13",
+        "label": "13.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-14",
+        "label": "14.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-15",
+        "label": "15.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-16",
+        "label": "16.01.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-01-17",
+        "label": "17.01.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-01-18",
+        "label": "18.01.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-01-19",
+        "label": "19.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-20",
+        "label": "20.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-21",
+        "label": "21.01.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-01-22",
+        "label": "22.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-23",
+        "label": "23.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-24",
+        "label": "24.01.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-01-25",
+        "label": "25.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-26",
+        "label": "26.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-27",
+        "label": "27.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-28",
+        "label": "28.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-29",
+        "label": "29.01.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-01-30",
+        "label": "30.01.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-01-31",
+        "label": "31.01.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-01",
+        "label": "01.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-02",
+        "label": "02.02.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-02-03",
+        "label": "03.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-04",
+        "label": "04.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-05",
+        "label": "05.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-06",
+        "label": "06.02.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-02-07",
+        "label": "07.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-08",
+        "label": "08.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-09",
+        "label": "09.02.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-02-10",
+        "label": "10.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-11",
+        "label": "11.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-12",
+        "label": "12.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-13",
+        "label": "13.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-14",
+        "label": "14.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-15",
+        "label": "15.02.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-02-16",
+        "label": "16.02.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-02-17",
+        "label": "17.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-18",
+        "label": "18.02.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-02-19",
+        "label": "19.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-20",
+        "label": "20.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-21",
+        "label": "21.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-22",
+        "label": "22.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-23",
+        "label": "23.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-24",
+        "label": "24.02.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-02-25",
+        "label": "25.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-26",
+        "label": "26.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-27",
+        "label": "27.02.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-28",
+        "label": "28.02.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-03-01",
+        "label": "01.03.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-03-02",
+        "label": "02.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-03",
+        "label": "03.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-04",
+        "label": "04.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-05",
+        "label": "05.03.2026",
+        "count": 3,
+        "level": 4
+      },
+      {
+        "date": "2026-03-06",
+        "label": "06.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-07",
+        "label": "07.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-08",
+        "label": "08.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-09",
+        "label": "09.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-10",
+        "label": "10.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-11",
+        "label": "11.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-12",
+        "label": "12.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-13",
+        "label": "13.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-14",
+        "label": "14.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-15",
+        "label": "15.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-16",
+        "label": "16.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-17",
+        "label": "17.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-18",
+        "label": "18.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-19",
+        "label": "19.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-20",
+        "label": "20.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-21",
+        "label": "21.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-22",
+        "label": "22.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-23",
+        "label": "23.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-24",
+        "label": "24.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-25",
+        "label": "25.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-26",
+        "label": "26.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-27",
+        "label": "27.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-28",
+        "label": "28.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-29",
+        "label": "29.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-30",
+        "label": "30.03.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-03-31",
+        "label": "31.03.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-01",
+        "label": "01.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-04-02",
+        "label": "02.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-03",
+        "label": "03.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-04-04",
+        "label": "04.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-05",
+        "label": "05.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-06",
+        "label": "06.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-07",
+        "label": "07.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-08",
+        "label": "08.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-09",
+        "label": "09.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-10",
+        "label": "10.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-11",
+        "label": "11.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-04-12",
+        "label": "12.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-13",
+        "label": "13.04.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-04-14",
+        "label": "14.04.2026",
+        "count": 3,
+        "level": 4
+      },
+      {
+        "date": "2026-04-15",
+        "label": "15.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-16",
+        "label": "16.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-04-17",
+        "label": "17.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-18",
+        "label": "18.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-04-19",
+        "label": "19.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-20",
+        "label": "20.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-21",
+        "label": "21.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-22",
+        "label": "22.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-04-23",
+        "label": "23.04.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-04-24",
+        "label": "24.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-25",
+        "label": "25.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-04-26",
+        "label": "26.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-27",
+        "label": "27.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-28",
+        "label": "28.04.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-29",
+        "label": "29.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-04-30",
+        "label": "30.04.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-05-01",
+        "label": "01.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-02",
+        "label": "02.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-03",
+        "label": "03.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-04",
+        "label": "04.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-05",
+        "label": "05.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-06",
+        "label": "06.05.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-05-07",
+        "label": "07.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-08",
+        "label": "08.05.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-05-09",
+        "label": "09.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-10",
+        "label": "10.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-11",
+        "label": "11.05.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-05-12",
+        "label": "12.05.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-05-13",
+        "label": "13.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-14",
+        "label": "14.05.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-05-15",
+        "label": "15.05.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-05-16",
+        "label": "16.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-17",
+        "label": "17.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-18",
+        "label": "18.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-19",
+        "label": "19.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-20",
+        "label": "20.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-21",
+        "label": "21.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-22",
+        "label": "22.05.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-05-23",
+        "label": "23.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-24",
+        "label": "24.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-25",
+        "label": "25.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-26",
+        "label": "26.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-27",
+        "label": "27.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-28",
+        "label": "28.05.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-05-29",
+        "label": "29.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-30",
+        "label": "30.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-31",
+        "label": "31.05.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-01",
+        "label": "01.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-02",
+        "label": "02.06.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-06-03",
+        "label": "03.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-04",
+        "label": "04.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-05",
+        "label": "05.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-06",
+        "label": "06.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-07",
+        "label": "07.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-08",
+        "label": "08.06.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-06-09",
+        "label": "09.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-10",
+        "label": "10.06.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-06-11",
+        "label": "11.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-12",
+        "label": "12.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-13",
+        "label": "13.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-14",
+        "label": "14.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-15",
+        "label": "15.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-16",
+        "label": "16.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-17",
+        "label": "17.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-18",
+        "label": "18.06.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-06-19",
+        "label": "19.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-20",
+        "label": "20.06.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-06-21",
+        "label": "21.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-22",
+        "label": "22.06.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-06-23",
+        "label": "23.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-24",
+        "label": "24.06.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-06-25",
+        "label": "25.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-26",
+        "label": "26.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-27",
+        "label": "27.06.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-06-28",
+        "label": "28.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-29",
+        "label": "29.06.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-30",
+        "label": "30.06.2026",
+        "count": 3,
+        "level": 4
+      },
+      {
+        "date": "2026-07-01",
+        "label": "01.07.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-07-02",
+        "label": "02.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-03",
+        "label": "03.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-04",
+        "label": "04.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-05",
+        "label": "05.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-06",
+        "label": "06.07.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-07-07",
+        "label": "07.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-08",
+        "label": "08.07.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-07-09",
+        "label": "09.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-10",
+        "label": "10.07.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-07-11",
+        "label": "11.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-12",
+        "label": "12.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-13",
+        "label": "13.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-14",
+        "label": "14.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-15",
+        "label": "15.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-16",
+        "label": "16.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-17",
+        "label": "17.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-18",
+        "label": "18.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-19",
+        "label": "19.07.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-07-20",
+        "label": "20.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-21",
+        "label": "21.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-22",
+        "label": "22.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-23",
+        "label": "23.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-24",
+        "label": "24.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-25",
+        "label": "25.07.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-07-26",
+        "label": "26.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-27",
+        "label": "27.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-28",
+        "label": "28.07.2026",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-29",
+        "label": "29.07.2026",
+        "count": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-07-30",
+        "label": "30.07.2026",
+        "count": 2,
+        "level": 3
+      },
+      {
+        "date": "2026-07-31",
+        "label": "31.07.2026",
+        "count": 1,
+        "level": 3
+      }
+    ]
+  },
+  "firstSeenKennids": [
+    {
+      "kennid": 40,
+      "firstSeenDate": "2026-01-16",
+      "land": "laender",
+      "category": "europe",
+      "label": "I \u2014 Italien",
+      "code": "I"
+    },
+    {
+      "kennid": 2772,
+      "firstSeenDate": "2026-01-17",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "AL \u2014 Landkreis Altena",
+      "code": "AL"
+    },
+    {
+      "kennid": 68,
+      "firstSeenDate": "2026-01-18",
+      "land": "laender",
+      "category": "europe",
+      "label": "A \u2014 \u00d6sterreich",
+      "code": "A"
+    },
+    {
+      "kennid": 132,
+      "firstSeenDate": "2026-01-21",
+      "land": "laender",
+      "category": "europe",
+      "label": "MD \u2014 Republik Moldau",
+      "code": "MD"
+    },
+    {
+      "kennid": 8,
+      "firstSeenDate": "2026-01-24",
+      "land": "laender",
+      "category": "europe",
+      "label": "B \u2014 Belgien",
+      "code": "B"
+    },
+    {
+      "kennid": 1680,
+      "firstSeenDate": "2026-01-24",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "NOL \u2014 Landkreis G\u00f6rlitz",
+      "code": "NOL"
+    },
+    {
+      "kennid": 2932,
+      "firstSeenDate": "2026-01-29",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "LAN \u2014 Landkreis Dingolfing-Landau",
+      "code": "LAN"
+    },
+    {
+      "kennid": 112,
+      "firstSeenDate": "2026-01-30",
+      "land": "laender",
+      "category": "europe",
+      "label": "AL \u2014 Albanien",
+      "code": "AL"
+    },
+    {
+      "kennid": 1084,
+      "firstSeenDate": "2026-02-02",
+      "land": "usa",
+      "category": "usa",
+      "label": "NE22 \u2014 Saline County",
+      "code": "NE22"
+    },
+    {
+      "kennid": 88,
+      "firstSeenDate": "2026-02-06",
+      "land": "laender",
+      "category": "europe",
+      "label": "SK \u2014 Slowakei",
+      "code": "SK"
+    },
+    {
+      "kennid": 116,
+      "firstSeenDate": "2026-02-06",
+      "land": "laender",
+      "category": "europe",
+      "label": "AND \u2014 Andorra",
+      "code": "AND"
+    },
+    {
+      "kennid": 148,
+      "firstSeenDate": "2026-02-09",
+      "land": "laender",
+      "category": "europe",
+      "label": "N \u2014 Norwegen",
+      "code": "N"
+    },
+    {
+      "kennid": 1924,
+      "firstSeenDate": "2026-02-09",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "RDG \u2014 Landkreis Vorpommern-R\u00fcgen",
+      "code": "RDG"
+    },
+    {
+      "kennid": 1816,
+      "firstSeenDate": "2026-02-15",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "P \u2014 Stadt Potsdam",
+      "code": "P"
+    },
+    {
+      "kennid": 24,
+      "firstSeenDate": "2026-02-18",
+      "land": "laender",
+      "category": "europe",
+      "label": "FIN \u2014 Finnland",
+      "code": "FIN"
+    },
+    {
+      "kennid": 76,
+      "firstSeenDate": "2026-02-24",
+      "land": "laender",
+      "category": "europe",
+      "label": "P \u2014 Portugal",
+      "code": "P"
+    },
+    {
+      "kennid": 1112,
+      "firstSeenDate": "2026-02-24",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "ILL \u2014 Landkreis Neu-Ulm",
+      "code": "ILL"
+    },
+    {
+      "kennid": 144,
+      "firstSeenDate": "2026-02-28",
+      "land": "laender",
+      "category": "europe",
+      "label": "NMK \u2014 Nordmazedonien",
+      "code": "NMK"
+    },
+    {
+      "kennid": 936,
+      "firstSeenDate": "2026-02-28",
+      "land": "usa",
+      "category": "usa",
+      "label": "MT41 \u2014 McCone County",
+      "code": "MT41"
+    },
+    {
+      "kennid": 1632,
+      "firstSeenDate": "2026-03-01",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "NES \u2014 Landkreis Rh\u00f6n-Grabfeld",
+      "code": "NES"
+    },
+    {
+      "kennid": 3132,
+      "firstSeenDate": "2026-03-01",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "ST \u2014 Landkreis Stade",
+      "code": "ST"
+    },
+    {
+      "kennid": 168,
+      "firstSeenDate": "2026-03-04",
+      "land": "laender",
+      "category": "europe",
+      "label": "TR \u2014 T\u00fcrkei",
+      "code": "TR"
+    },
+    {
+      "kennid": 172,
+      "firstSeenDate": "2026-03-05",
+      "land": "laender",
+      "category": "europe",
+      "label": "UA \u2014 Ukraine",
+      "code": "UA"
+    },
+    {
+      "kennid": 2144,
+      "firstSeenDate": "2026-03-05",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "SHG \u2014 Landkreis Schaumburg",
+      "code": "SHG"
+    },
+    {
+      "kennid": 2692,
+      "firstSeenDate": "2026-03-05",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "BD1 \u2014 Deutscher Bundestag",
+      "code": "BD1"
+    },
+    {
+      "kennid": 976,
+      "firstSeenDate": "2026-03-06",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HGW \u2014 Stadt Greifswald",
+      "code": "HGW"
+    },
+    {
+      "kennid": 1756,
+      "firstSeenDate": "2026-03-07",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "OE \u2014 Kreis Olpe",
+      "code": "OE"
+    },
+    {
+      "kennid": 60,
+      "firstSeenDate": "2026-03-08",
+      "land": "laender",
+      "category": "europe",
+      "label": "M \u2014 Malta",
+      "code": "M"
+    },
+    {
+      "kennid": 232,
+      "firstSeenDate": "2026-03-10",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "BNA \u2014 Landkreis Leipzig",
+      "code": "BNA"
+    },
+    {
+      "kennid": 2164,
+      "firstSeenDate": "2026-03-12",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "SIM \u2014 Rhein-Hunsr\u00fcck-Kreis",
+      "code": "SIM"
+    },
+    {
+      "kennid": 560,
+      "firstSeenDate": "2026-03-13",
+      "land": "usa",
+      "category": "usa",
+      "label": "AL14 \u2014 Chilton County",
+      "code": "AL14"
+    },
+    {
+      "kennid": 1028,
+      "firstSeenDate": "2026-03-15",
+      "land": "usa",
+      "category": "usa",
+      "label": "NE8 \u2014 Hall County",
+      "code": "NE8"
+    },
+    {
+      "kennid": 2580,
+      "firstSeenDate": "2026-03-16",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "WOL \u2014 Ortenaukreis",
+      "code": "WOL"
+    },
+    {
+      "kennid": 188,
+      "firstSeenDate": "2026-03-17",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "BID \u2014 Landkreis Marburg-Biedenkopf",
+      "code": "BID"
+    },
+    {
+      "kennid": 1744,
+      "firstSeenDate": "2026-03-18",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "OC \u2014 Landkreis B\u00f6rde",
+      "code": "OC"
+    },
+    {
+      "kennid": 164,
+      "firstSeenDate": "2026-03-21",
+      "land": "laender",
+      "category": "europe",
+      "label": "SRB \u2014 Serbien",
+      "code": "SRB"
+    },
+    {
+      "kennid": 804,
+      "firstSeenDate": "2026-03-22",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "G\u00d6 \u2014 Stadt/Landkreis G\u00f6ttingen",
+      "code": "G\u00d6"
+    },
+    {
+      "kennid": 1648,
+      "firstSeenDate": "2026-03-30",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "NI \u2014 Landkreis Nienburg/Weser",
+      "code": "NI"
+    },
+    {
+      "kennid": 788,
+      "firstSeenDate": "2026-04-01",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "GM \u2014 Oberbergischer Kreis",
+      "code": "GM"
+    },
+    {
+      "kennid": 2504,
+      "firstSeenDate": "2026-04-03",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "WER \u2014 Landkreis Dillingen an der Donau",
+      "code": "WER"
+    },
+    {
+      "kennid": 1340,
+      "firstSeenDate": "2026-04-11",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "LM \u2014 Landkreis Limburg-Weilburg",
+      "code": "LM"
+    },
+    {
+      "kennid": 92,
+      "firstSeenDate": "2026-04-13",
+      "land": "laender",
+      "category": "europe",
+      "label": "SLO \u2014 Slowenien",
+      "code": "SLO"
+    },
+    {
+      "kennid": 1832,
+      "firstSeenDate": "2026-04-13",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "PAR \u2014 Landkreis Kelheim",
+      "code": "PAR"
+    },
+    {
+      "kennid": 1908,
+      "firstSeenDate": "2026-04-14",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "R \u2014 Stadt/Landkreis Regensburg",
+      "code": "R"
+    },
+    {
+      "kennid": 1932,
+      "firstSeenDate": "2026-04-14",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "REG \u2014 Landkreis Regen",
+      "code": "REG"
+    },
+    {
+      "kennid": 2636,
+      "firstSeenDate": "2026-04-14",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "WUN \u2014 Landkreis Wunsiedel im Fichtelgebirge",
+      "code": "WUN"
+    },
+    {
+      "kennid": 1852,
+      "firstSeenDate": "2026-04-16",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "PF \u2014 Stadt Pforzheim",
+      "code": "PF"
+    },
+    {
+      "kennid": 192,
+      "firstSeenDate": "2026-04-18",
+      "land": "laender",
+      "category": "europe",
+      "label": "GE \u2014 Georgien",
+      "code": "GE"
+    },
+    {
+      "kennid": 812,
+      "firstSeenDate": "2026-04-22",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "GOH \u2014 Rhein-Lahn-Kreis",
+      "code": "GOH"
+    },
+    {
+      "kennid": 152,
+      "firstSeenDate": "2026-04-23",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "BC \u2014 Landkreis Biberach",
+      "code": "BC"
+    },
+    {
+      "kennid": 184,
+      "firstSeenDate": "2026-04-23",
+      "land": "laender",
+      "category": "europe",
+      "label": "BY \u2014 Belarus",
+      "code": "BY"
+    },
+    {
+      "kennid": 2140,
+      "firstSeenDate": "2026-04-25",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "SHA \u2014 Landkreis Schw\u00e4bisch Hall",
+      "code": "SHA"
+    },
+    {
+      "kennid": 2020,
+      "firstSeenDate": "2026-04-29",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "RU \u2014 Landkreis Saalfeld-Rudolstadt",
+      "code": "RU"
+    },
+    {
+      "kennid": 108,
+      "firstSeenDate": "2026-04-30",
+      "land": "laender",
+      "category": "europe",
+      "label": "CY \u2014 Zypern",
+      "code": "CY"
+    },
+    {
+      "kennid": 2028,
+      "firstSeenDate": "2026-05-06",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "R\u00dcG \u2014 Landkreis Vorpommern-R\u00fcgen",
+      "code": "R\u00dcG"
+    },
+    {
+      "kennid": 52,
+      "firstSeenDate": "2026-05-08",
+      "land": "laender",
+      "category": "europe",
+      "label": "LT \u2014 Litauen",
+      "code": "LT"
+    },
+    {
+      "kennid": 1396,
+      "firstSeenDate": "2026-05-11",
+      "land": "usa",
+      "category": "usa",
+      "label": "SD7 \u2014 Yankton County",
+      "code": "SD7"
+    },
+    {
+      "kennid": 1952,
+      "firstSeenDate": "2026-05-12",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "RID \u2014 Landkreis Kelheim",
+      "code": "RID"
+    },
+    {
+      "kennid": 136,
+      "firstSeenDate": "2026-05-14",
+      "land": "laender",
+      "category": "europe",
+      "label": "MC \u2014 Monaco",
+      "code": "MC"
+    },
+    {
+      "kennid": 540,
+      "firstSeenDate": "2026-05-15",
+      "land": "usa",
+      "category": "usa",
+      "label": "AL9 \u2014 Bullock County",
+      "code": "AL9"
+    },
+    {
+      "kennid": 64,
+      "firstSeenDate": "2026-05-22",
+      "land": "laender",
+      "category": "europe",
+      "label": "NL \u2014 Niederlande",
+      "code": "NL"
+    },
+    {
+      "kennid": 100,
+      "firstSeenDate": "2026-05-22",
+      "land": "laender",
+      "category": "europe",
+      "label": "CZ \u2014 Tschechien",
+      "code": "CZ"
+    },
+    {
+      "kennid": 20,
+      "firstSeenDate": "2026-05-28",
+      "land": "laender",
+      "category": "europe",
+      "label": "EST \u2014 Estland",
+      "code": "EST"
+    },
+    {
+      "kennid": 1020,
+      "firstSeenDate": "2026-05-28",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HO \u2014 Stadt/Landkreis Hof (Saale)",
+      "code": "HO"
+    },
+    {
+      "kennid": 128,
+      "firstSeenDate": "2026-06-02",
+      "land": "laender",
+      "category": "europe",
+      "label": "FL \u2014 Liechtenstein",
+      "code": "FL"
+    },
+    {
+      "kennid": 28,
+      "firstSeenDate": "2026-06-08",
+      "land": "laender",
+      "category": "europe",
+      "label": "F \u2014 Frankreich",
+      "code": "F"
+    },
+    {
+      "kennid": 1044,
+      "firstSeenDate": "2026-06-10",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HOT \u2014 Landkreis Zwickau",
+      "code": "HOT"
+    },
+    {
+      "kennid": 4,
+      "firstSeenDate": "2026-06-18",
+      "land": "laender",
+      "category": "europe",
+      "label": "DK \u2014 D\u00e4nemark",
+      "code": "DK"
+    },
+    {
+      "kennid": 1612,
+      "firstSeenDate": "2026-06-18",
+      "land": "usa",
+      "category": "usa",
+      "label": "SD61 \u2014 Turner County",
+      "code": "SD61"
+    },
+    {
+      "kennid": 2900,
+      "firstSeenDate": "2026-06-20",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "HZ \u2014 Landkreis Herzberg",
+      "code": "HZ"
+    },
+    {
+      "kennid": 1428,
+      "firstSeenDate": "2026-06-22",
+      "land": "usa",
+      "category": "usa",
+      "label": "SD15 \u2014 Butte County",
+      "code": "SD15"
+    },
+    {
+      "kennid": 1580,
+      "firstSeenDate": "2026-06-24",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "MYK \u2014 Landkreis Mayen-Koblenz",
+      "code": "MYK"
+    },
+    {
+      "kennid": 44,
+      "firstSeenDate": "2026-06-27",
+      "land": "laender",
+      "category": "europe",
+      "label": "HR \u2014 Kroatien",
+      "code": "HR"
+    },
+    {
+      "kennid": 32,
+      "firstSeenDate": "2026-06-30",
+      "land": "laender",
+      "category": "europe",
+      "label": "GR \u2014 Griechenland",
+      "code": "GR"
+    },
+    {
+      "kennid": 80,
+      "firstSeenDate": "2026-06-30",
+      "land": "laender",
+      "category": "europe",
+      "label": "RO \u2014 Rum\u00e4nien",
+      "code": "RO"
+    },
+    {
+      "kennid": 3092,
+      "firstSeenDate": "2026-06-30",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "ROH \u2014 Landkreis Rotenburg in Hannover",
+      "code": "ROH"
+    },
+    {
+      "kennid": 828,
+      "firstSeenDate": "2026-07-01",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "GRH \u2014 Landkreis Mei\u00dfen",
+      "code": "GRH"
+    },
+    {
+      "kennid": 160,
+      "firstSeenDate": "2026-07-06",
+      "land": "laender",
+      "category": "europe",
+      "label": "CH \u2014 Schweiz",
+      "code": "CH"
+    },
+    {
+      "kennid": 72,
+      "firstSeenDate": "2026-07-08",
+      "land": "laender",
+      "category": "europe",
+      "label": "PL \u2014 Polen",
+      "code": "PL"
+    },
+    {
+      "kennid": 1336,
+      "firstSeenDate": "2026-07-10",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "LL \u2014 Landkreis Landsberg am Lech",
+      "code": "LL"
+    },
+    {
+      "kennid": 84,
+      "firstSeenDate": "2026-07-25",
+      "land": "laender",
+      "category": "europe",
+      "label": "S \u2014 Schweden",
+      "code": "S"
+    },
+    {
+      "kennid": 3084,
+      "firstSeenDate": "2026-07-29",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "REI \u2014 Landkreis Berchtesgadener Land",
+      "code": "REI"
+    },
+    {
+      "kennid": 528,
+      "firstSeenDate": "2026-07-30",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "EG \u2014 Landkreis Rottal-Inn",
+      "code": "EG"
+    },
+    {
+      "kennid": 3056,
+      "firstSeenDate": "2026-07-30",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "OP \u2014 Stadt Leverkusen",
+      "code": "OP"
+    },
+    {
+      "kennid": 2644,
+      "firstSeenDate": "2026-07-31",
+      "land": "deutschland",
+      "category": "germany",
+      "label": "WW \u2014 Westerwaldkreis",
+      "code": "WW"
+    }
+  ],
+  "recentHighlights": [
+    "85 unique Kennzeichen IDs collected",
+    "69 active days across the archive",
+    "3 land buckets represented"
+  ],
+  "rank": 3,
+  "profilePath": "profiles/mia.html"
+}

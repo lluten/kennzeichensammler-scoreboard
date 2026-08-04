@@ -1,8 +1,94 @@
 {
-  "generatedAt": "2026-08-04T11:35:04Z",
+  "generatedAt": "2026-08-04T11:53:13Z",
+  "collectorCount": 5,
   "leaderboard": [
     {
       "rank": 1,
+      "collectorId": "alex",
+      "displayName": "Alex",
+      "profilePath": "profiles/alex.html",
+      "stats": {
+        "uniqueKennids": 192,
+        "totalSightings": 195,
+        "activeDays": 129,
+        "lastSeenDate": "2026-07-31",
+        "newDiscoveries": 192,
+        "repeatRate": 0.0154,
+        "discoveryEfficiency": 0.9846
+      },
+      "hoverInfo": [
+        "unique Kennzeichen IDs: 192",
+        "total sightings: 195",
+        "active days: 129",
+        "Germany: 180 \u00b7 Europe: 12 \u00b7 USA: 3"
+      ]
+    },
+    {
+      "rank": 2,
+      "collectorId": "sam",
+      "displayName": "Sam",
+      "profilePath": "profiles/sam.html",
+      "stats": {
+        "uniqueKennids": 121,
+        "totalSightings": 125,
+        "activeDays": 101,
+        "lastSeenDate": "2026-07-31",
+        "newDiscoveries": 121,
+        "repeatRate": 0.032,
+        "discoveryEfficiency": 0.968
+      },
+      "hoverInfo": [
+        "unique Kennzeichen IDs: 121",
+        "total sightings: 125",
+        "active days: 101",
+        "Germany: 90 \u00b7 Europe: 20 \u00b7 USA: 15"
+      ]
+    },
+    {
+      "rank": 3,
+      "collectorId": "mia",
+      "displayName": "Mia",
+      "profilePath": "profiles/mia.html",
+      "stats": {
+        "uniqueKennids": 85,
+        "totalSightings": 88,
+        "activeDays": 69,
+        "lastSeenDate": "2026-07-31",
+        "newDiscoveries": 85,
+        "repeatRate": 0.0341,
+        "discoveryEfficiency": 0.9659
+      },
+      "hoverInfo": [
+        "unique Kennzeichen IDs: 85",
+        "total sightings: 88",
+        "active days: 69",
+        "Germany: 45 \u00b7 Europe: 35 \u00b7 USA: 8"
+      ]
+    },
+    {
+      "rank": 4,
+      "collectorId": "tom",
+      "displayName": "Tom",
+      "profilePath": "profiles/tom.html",
+      "stats": {
+        "uniqueKennids": 68,
+        "totalSightings": 70,
+        "activeDays": 53,
+        "lastSeenDate": "2026-05-17",
+        "newDiscoveries": 68,
+        "repeatRate": 0.0286,
+        "discoveryEfficiency": 0.9714
+      },
+      "hoverInfo": [
+        "unique Kennzeichen IDs: 68",
+        "total sightings: 70",
+        "active days: 53",
+        "Germany: 25 \u00b7 Europe: 5 \u00b7 USA: 40"
+      ]
+    },
+    {
+      "rank": 5,
+      "collectorId": "jonathan",
       "displayName": "Jonathan",
       "profilePath": "profiles/jonathan.html",
       "stats": {
@@ -19,28 +105,27 @@
         "total sightings: 18",
         "active days: 1",
         "Germany: 17 \u00b7 Europe: 1 \u00b7 USA: 0"
-      ],
-      "collectorId": "jonathan"
+      ]
     }
   ],
   "awards": [
     {
       "title": "sharpest scout",
-      "value": "18",
+      "value": "192",
       "context": "distinct Kennzeichen IDs discovered",
-      "winner": "Jonathan"
+      "winner": "Alex"
     },
     {
       "title": "most active",
-      "value": "18",
+      "value": "195",
       "context": "total logged sightings",
-      "winner": "Jonathan"
+      "winner": "Alex"
     },
     {
       "title": "longest streak",
-      "value": "1 days",
+      "value": "24 days",
       "context": "consecutive active days",
-      "winner": "Jonathan"
+      "winner": "Alex"
     },
     {
       "title": "best efficiency",
@@ -48,6 +133,5 @@
       "context": "unique IDs per logged sighting",
       "winner": "Jonathan"
     }
-  ],
-  "collectorCount": 1
+  ]
 }
