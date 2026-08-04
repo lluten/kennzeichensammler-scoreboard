@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T11:53:13Z",
+  "generatedAt": "2026-08-04T12:16:53Z",
   "collectorCount": 5,
   "leaderboard": [
     {
@@ -25,6 +25,27 @@
     },
     {
       "rank": 2,
+      "collectorId": "jonathan",
+      "displayName": "Jonathan",
+      "profilePath": "profiles/jonathan.html",
+      "stats": {
+        "uniqueKennids": 149,
+        "totalSightings": 154,
+        "activeDays": 6,
+        "lastSeenDate": "2026-08-02",
+        "newDiscoveries": 149,
+        "repeatRate": 0.0325,
+        "discoveryEfficiency": 0.9675
+      },
+      "hoverInfo": [
+        "unique Kennzeichen IDs: 149",
+        "total sightings: 154",
+        "active days: 6",
+        "Germany: 116 \u00b7 Europe: 38 \u00b7 USA: 0"
+      ]
+    },
+    {
+      "rank": 3,
       "collectorId": "sam",
       "displayName": "Sam",
       "profilePath": "profiles/sam.html",
@@ -45,7 +66,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "collectorId": "mia",
       "displayName": "Mia",
       "profilePath": "profiles/mia.html",
@@ -66,7 +87,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "collectorId": "tom",
       "displayName": "Tom",
       "profilePath": "profiles/tom.html",
@@ -84,27 +105,6 @@
         "total sightings: 70",
         "active days: 53",
         "Germany: 25 \u00b7 Europe: 5 \u00b7 USA: 40"
-      ]
-    },
-    {
-      "rank": 5,
-      "collectorId": "jonathan",
-      "displayName": "Jonathan",
-      "profilePath": "profiles/jonathan.html",
-      "stats": {
-        "uniqueKennids": 18,
-        "totalSightings": 18,
-        "activeDays": 1,
-        "lastSeenDate": "2026-07-15",
-        "newDiscoveries": 18,
-        "repeatRate": 0.0,
-        "discoveryEfficiency": 1.0
-      },
-      "hoverInfo": [
-        "unique Kennzeichen IDs: 18",
-        "total sightings: 18",
-        "active days: 1",
-        "Germany: 17 \u00b7 Europe: 1 \u00b7 USA: 0"
       ]
     }
   ],
@@ -129,9 +129,9 @@
     },
     {
       "title": "best efficiency",
-      "value": "100%",
+      "value": "98%",
       "context": "unique IDs per logged sighting",
-      "winner": "Jonathan"
+      "winner": "Alex"
     }
   ]
 }
