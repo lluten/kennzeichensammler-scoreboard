@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Local decode scratch files
+.tmp_decode.sqlite
+decoded_payload.bin
+decoded_payload.sqlite
+
+# Keep the current sample backup local-only for now.
+KennzeichensammlerBackupX-15.07.2026

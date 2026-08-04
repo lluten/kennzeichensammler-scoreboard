@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-08-04T09:37:33Z",
+  "friendCount": 1,
+  "leaderboard": [
+    {
+      "rank": 1,
+      "friendId": "kennzeichensammlerbackupx-15-07-2026",
+      "displayName": "Kennzeichensammlerbackupx 15.07.2026",
+      "profilePath": "profiles/kennzeichensammlerbackupx-15-07-2026.html",
+      "stats": {
+        "uniqueKennids": 18,
+        "totalSightings": 18,
+        "activeDays": 1,
+        "lastSeenDate": "2026-07-15",
+        "newDiscoveries": 18,
+        "repeatRate": 0.0,
+        "discoveryEfficiency": 1.0
+      },
+      "hoverInfo": [
+        "unique Kennzeichen IDs: 18",
+        "total sightings: 18",
+        "active days: 1"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "sharpest scout",
+      "value": "18",
+      "context": "distinct Kennzeichen IDs discovered",
+      "winner": "Kennzeichensammlerbackupx 15.07.2026"
+    },
+    {
+      "title": "most active",
+      "value": "18",
+      "context": "total logged sightings",
+      "winner": "Kennzeichensammlerbackupx 15.07.2026"
+    },
+    {
+      "title": "longest streak",
+      "value": "1 days",
+      "context": "consecutive active days",
+      "winner": "Kennzeichensammlerbackupx 15.07.2026"
+    },
+    {
+      "title": "best efficiency",
+      "value": "100%",
+      "context": "unique IDs per logged sighting",
+      "winner": "Kennzeichensammlerbackupx 15.07.2026"
+    }
+  ]
+}

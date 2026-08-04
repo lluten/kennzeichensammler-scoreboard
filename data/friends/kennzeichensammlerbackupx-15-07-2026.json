@@ -1,0 +1,162 @@
+{
+  "friendId": "kennzeichensammlerbackupx-15-07-2026",
+  "displayName": "Kennzeichensammlerbackupx 15.07.2026",
+  "sourceBackup": "KennzeichensammlerBackupX-15.07.2026",
+  "stats": {
+    "totalSightings": 18,
+    "uniqueKennids": 18,
+    "activeDays": 1,
+    "firstSeenDate": "2026-07-15",
+    "lastSeenDate": "2026-07-15",
+    "spanDays": 1,
+    "repeatSightings": 0,
+    "repeatRate": 0.0,
+    "newDiscoveries": 18,
+    "discoveryEfficiency": 1.0,
+    "activityConsistency": 1.0,
+    "longestStreakDays": 1,
+    "bestDayBySightings": {
+      "date": "2026-07-15",
+      "label": "15.07.2026",
+      "totalSightings": 18,
+      "newDiscoveries": 18,
+      "repeatSightings": 0,
+      "cumulativeSightings": 18,
+      "cumulativeUniqueKennids": 18
+    },
+    "bestDayByUniqueDiscoveries": {
+      "date": "2026-07-15",
+      "label": "15.07.2026",
+      "totalSightings": 18,
+      "newDiscoveries": 18,
+      "repeatSightings": 0,
+      "cumulativeSightings": 18,
+      "cumulativeUniqueKennids": 18
+    },
+    "averageSightingsPerActiveDay": 18.0
+  },
+  "landBreakdown": [
+    {
+      "land": "deutschland",
+      "count": 17,
+      "share": 0.9444
+    },
+    {
+      "land": "laender",
+      "count": 1,
+      "share": 0.0556
+    }
+  ],
+  "series": {
+    "dailyActivity": [
+      {
+        "date": "2026-07-15",
+        "label": "15.07.2026",
+        "totalSightings": 18,
+        "newDiscoveries": 18,
+        "repeatSightings": 0,
+        "cumulativeSightings": 18,
+        "cumulativeUniqueKennids": 18
+      }
+    ]
+  },
+  "firstSeenKennids": [
+    {
+      "kennid": 16,
+      "firstSeenDate": "2026-07-15",
+      "land": "laender"
+    },
+    {
+      "kennid": 124,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 488,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 536,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 544,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 600,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 992,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1012,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1032,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1064,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1088,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1144,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1236,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1396,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1608,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 1684,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 2360,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    },
+    {
+      "kennid": 2388,
+      "firstSeenDate": "2026-07-15",
+      "land": "deutschland"
+    }
+  ],
+  "recentHighlights": [
+    "18 unique Kennzeichen IDs collected",
+    "1 active day across the archive",
+    "2 land buckets represented"
+  ],
+  "rank": 1,
+  "profilePath": "profiles/kennzeichensammlerbackupx-15-07-2026.html"
+}

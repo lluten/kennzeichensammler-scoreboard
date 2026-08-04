@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennzeichensammler Scoreboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="leaderboard">
+    <div class="container">
+        <header class="page-header">
+            <p class="eyebrow">kennzeichen sammler</p>
+            <h1>Kennzeichensammler</h1>
+            <p class="page-intro">A cleaner snapshot of the current season with room to compare the top collectors at a glance.</p>
+        </header>
+
+        <div class="page-layout">
+            <main class="main-panel">
+                <div class="section-heading">
+                    <h2>overall rankings</h2>
+                    <p>Hover a collector to compare the current backup snapshot.</p>
+                </div>
+
+                <div class="leaderboard-meta" id="leaderboard-meta"></div>
+                <div class="leaderboard" id="leaderboard"></div>
+            </main>
+
+            <aside class="awards-section">
+                <div class="section-heading">
+                    <h2>achievements</h2>
+                    <p>Interesting patterns we can derive from the current backup format.</p>
+                </div>
+
+                <div class="awards-list" id="awards-list"></div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
