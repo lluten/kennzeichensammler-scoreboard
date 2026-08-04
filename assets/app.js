@@ -310,55 +310,44 @@ function renderRegionProgress(profile) {
 
     const active = categories.find((category) => category.id === activeId) || categories[0];
     const summary = createEl("div", "region-summary");
-    const completionText =
+    const completionRatio =
+      active.catalogTotal > 0 ? active.uniqueCount / active.catalogTotal : active.uniqueCount > 0 ? 1 : 0;
+    const summaryText =
       active.catalogTotal != null
-        ? `${formatNumber(active.uniqueCount)} of ${formatNumber(active.catalogTotal)} catalog regions`
-        : `${formatNumber(active.uniqueCount)} unique regions`;
-    summary.append(
-      createEl(
-        "p",
-        "",
-        `${completionText} · ${formatNumber(active.totalSightings)} sightings${
-          active.completion != null ? ` · ${formatPercent(active.completion)} complete` : ""
-        }`
-      )
-    );
-    panel.append(summary);
+        ? `${formatNumber(active.uniqueCount)} / ${formatNumber(active.catalogTotal)} regions`
+        : `${formatNumber(active.uniqueCount)} regions`;
+    summary.append(createEl("p", "", `${summaryText} · ${formatPercent(completionRatio)}`));
+
+    const overall = createEl("div", "region-overall");
+    const overallTrack = createEl("div", "bar-track region-overall-track");
+    const overallFill = createEl("div", "bar-fill");
+    overallFill.style.width = `${Math.max(completionRatio * 100, completionRatio > 0 ? 2 : 0)}%`;
+    overallTrack.append(overallFill);
+    overall.append(overallTrack);
+    panel.append(summary, overall);
 
     if (!active.items.length) {
       panel.append(emptyState(`No ${active.label} entries in this backup yet.`));
       return;
     }
 
-    const list = createEl("div", "bar-list region-bar-list");
-    const maxCount = Math.max(1, ...active.items.map((item) => item.count));
+    const list = createEl("div", "region-compact-list");
     active.items.forEach((item) => {
-      const wrapper = createEl("div", "bar-item");
-      if (!item.collected && item.count === 0) {
-        wrapper.classList.add("is-missing");
+      const row = createEl("div", "region-compact-row");
+      if (!(item.collected || item.count > 0)) {
+        row.classList.add("is-missing");
       }
-      const header = createEl("div", "bar-item-header");
-      const title = createEl("span", "region-code", item.label || item.code || String(item.kennid));
-      const metaParts = [];
-      if (item.region) {
-        metaParts.push(item.region);
-      }
-      if (item.count > 0) {
-        metaParts.push(`${formatNumber(item.count)}×`);
-        if (item.firstSeenDate) {
-          metaParts.push(`first ${formatDate(item.firstSeenDate)}`);
-        }
-      } else {
-        metaParts.push("not collected");
-      }
-      header.append(title, createEl("span", "", metaParts.join(" · ")));
-      const track = createEl("div", "bar-track");
-      const fill = createEl("div", "bar-fill");
-      const width = item.count > 0 ? Math.max((item.count / maxCount) * 100, 8) : 0;
-      fill.style.width = `${width}%`;
-      track.append(fill);
-      wrapper.append(header, track);
-      list.append(wrapper);
+      const marker = createEl("span", "region-marker");
+      marker.title = item.count > 0 ? "collected" : "not collected";
+      const code = createEl("span", "region-code", item.code || String(item.kennid));
+      const name = createEl("span", "region-name", item.name || item.label || "");
+      const meta = createEl(
+        "span",
+        "region-meta",
+        item.count > 0 ? `${formatNumber(item.count)}×` : "—"
+      );
+      row.append(marker, code, name, meta);
+      list.append(row);
     });
     panel.append(list);
   }

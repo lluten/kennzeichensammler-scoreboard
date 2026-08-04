@@ -55,8 +55,8 @@
       "id": "germany",
       "label": "Germany",
       "uniqueCount": 17,
-      "catalogTotal": 1043,
-      "completion": 0.0163,
+      "catalogTotal": 829,
+      "completion": 0.0205,
       "totalSightings": 17,
       "items": [
         {
@@ -68,9 +68,11 @@
           "label": "B \u2014 Stadt Berlin",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 1,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 488,
@@ -81,9 +83,11 @@
           "label": "E \u2014 Stadt Essen",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 4,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 536,
@@ -94,9 +98,11 @@
           "label": "EIC \u2014 Landkreis Eichsfeld",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 13,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 544,
@@ -107,9 +113,11 @@
           "label": "EIN \u2014 Landkreis Northeim",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 10,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 600,
@@ -120,9 +128,11 @@
           "label": "ESW \u2014 Werra-Mei\u00dfner-Kreis",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 13,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 992,
@@ -133,9 +143,11 @@
           "label": "HIG \u2014 Landkreis Eichsfeld",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 10,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1012,
@@ -146,9 +158,11 @@
           "label": "HM\u00dc \u2014 Landkreis G\u00f6ttingen",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 10,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1032,
@@ -159,9 +173,11 @@
           "label": "HOL \u2014 Landkreis Holzminden",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 13,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1064,
@@ -172,9 +188,11 @@
           "label": "HSK \u2014 Hochsauerlandkreis",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 9,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1088,
@@ -185,9 +203,11 @@
           "label": "HX \u2014 Kreis H\u00f6xter",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 12,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1144,
@@ -198,9 +218,11 @@
           "label": "KA \u2014 Stadt/Landkreis Karlsruhe",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 2,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1236,
@@ -211,9 +233,11 @@
           "label": "KS \u2014 Stadt/Landkreis Kassel",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 6,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1396,
@@ -224,9 +248,11 @@
           "label": "M \u2014 Stadt/Landkreis M\u00fcnchen",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 1,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1608,
@@ -237,9 +263,11 @@
           "label": "NDH \u2014 Landkreis Nordhausen",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 13,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 1684,
@@ -250,22 +278,26 @@
           "label": "NOM \u2014 Landkreis Northeim",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 12,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 2360,
           "land": "deutschland",
           "code": "TR",
-          "name": "Stadt Trier",
+          "name": "Landkreis Trier-Saarburg",
           "region": "Rheinland-Pfalz",
-          "label": "TR \u2014 Stadt Trier",
+          "label": "TR \u2014 Landkreis Trier-Saarburg",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 9,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         },
         {
           "kennid": 2388,
@@ -276,9 +308,11 @@
           "label": "UH \u2014 Unstrut-Hainich-Kreis",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 13,
-          "share": 0.0588
+          "progress": 1.0,
+          "share": 1.0
         }
       ]
     },
@@ -286,7 +320,7 @@
       "id": "europe",
       "label": "Europe",
       "uniqueCount": 1,
-      "catalogTotal": 3571,
+      "catalogTotal": 3947,
       "completion": 0.0003,
       "totalSightings": 1,
       "items": [
@@ -299,8 +333,10 @@
           "label": "D \u2014 Deutschland",
           "count": 1,
           "collected": true,
+          "countable": true,
           "firstSeenDate": "2026-07-15",
           "points": 10,
+          "progress": 1.0,
           "share": 1.0
         }
       ]
@@ -2672,7 +2708,7 @@
       "firstSeenDate": "2026-07-15",
       "land": "deutschland",
       "category": "germany",
-      "label": "TR \u2014 Stadt Trier",
+      "label": "TR \u2014 Landkreis Trier-Saarburg",
       "code": "TR"
     },
     {

@@ -112,6 +112,8 @@ class CatalogEntry:
     name: str
     region: str
     points: int
+    besonderes: str
+    countable: bool
 
 
 class RegionCatalog:
@@ -121,6 +123,11 @@ class RegionCatalog:
         self.path = path
         self.by_land_id: dict[tuple[str, int], CatalogEntry] = {}
         self.by_category: dict[str, list[CatalogEntry]] = {
+            "germany": [],
+            "europe": [],
+            "usa": [],
+        }
+        self.countable_by_category: dict[str, list[CatalogEntry]] = {
             "germany": [],
             "europe": [],
             "usa": [],
@@ -137,6 +144,7 @@ class RegionCatalog:
                 "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
             ).fetchall()
         ]
+        all_entries: list[CatalogEntry] = []
         for table in tables:
             if table in {"global", "global2"}:
                 continue
@@ -144,7 +152,7 @@ class RegionCatalog:
             if not {"id", "kennzeichen", "ort"}.issubset(cols):
                 continue
             for row in conn.execute(
-                f'SELECT id, kennzeichen, ort, bundesland, punkte, land FROM "{table}"'
+                f'SELECT id, kennzeichen, ort, bundesland, punkte, land, besonderes FROM "{table}"'
             ):
                 kennid = int(row["id"])
                 if kennid <= 1:
@@ -154,6 +162,9 @@ class RegionCatalog:
                 name = str(row["ort"] or "").strip() or code or str(kennid)
                 region = str(row["bundesland"] or "").strip()
                 points = int(row["punkte"] or 0)
+                besonderes = str(row["besonderes"] or "").strip()
+                # Match the app's Germany total: distinct codes, excluding diplomats.
+                countable = bool(code) and besonderes != "Diplomatenkennzeichen"
                 entry = CatalogEntry(
                     kennid=kennid,
                     land=land,
@@ -161,18 +172,44 @@ class RegionCatalog:
                     name=name,
                     region=region,
                     points=points,
+                    besonderes=besonderes,
+                    countable=countable,
                 )
-                self.by_land_id[(land, kennid)] = entry
-                category = LAND_CATEGORY_MAP.get(land, "europe")
-                self.by_category[category].append(entry)
+                all_entries.append(entry)
+                # Prefer a plain/non-diplomat row when the same id appears twice.
+                key = (land, kennid)
+                existing = self.by_land_id.get(key)
+                if existing is None or (existing.besonderes and not entry.besonderes):
+                    self.by_land_id[key] = entry
         conn.close()
+
+        for entry in self.by_land_id.values():
+            category = LAND_CATEGORY_MAP.get(entry.land, "europe")
+            self.by_category[category].append(entry)
         for category_id, entries in self.by_category.items():
-            # Deduplicate by (land, kennid) while keeping stable code order.
-            unique = {}
-            for entry in entries:
-                unique[(entry.land, entry.kennid)] = entry
             self.by_category[category_id] = sorted(
-                unique.values(),
+                entries,
+                key=lambda item: (item.code.lower(), item.name.lower(), item.kennid),
+            )
+
+        # Countable universe from every catalog row (not id-deduped), so alternate
+        # codes like "0-1" and "01" both count toward the app's totals.
+        countable_maps: dict[str, dict[tuple[str, str], CatalogEntry]] = {
+            "germany": {},
+            "europe": {},
+            "usa": {},
+        }
+        for entry in all_entries:
+            if not entry.countable:
+                continue
+            category = LAND_CATEGORY_MAP.get(entry.land, "europe")
+            key = (entry.land, entry.code)
+            existing = countable_maps[category].get(key)
+            if existing is None or (existing.besonderes and not entry.besonderes):
+                countable_maps[category][key] = entry
+        for category_id, mapping in countable_maps.items():
+            self.countable_by_category[category_id] = sorted(
+                mapping.values(),
                 key=lambda item: (item.code.lower(), item.name.lower(), item.kennid),
             )
 
@@ -410,6 +447,7 @@ def build_region_categories(parsed_rows: list[dict], catalog: RegionCatalog) -> 
                 "label": catalog.label_for(land, kennid),
                 "count": 0,
                 "collected": True,
+                "countable": entry.countable if entry else True,
                 "firstSeenDate": format_date_iso(row["date"]),
                 "points": entry.points if entry else 0,
             },
@@ -421,18 +459,20 @@ def build_region_categories(parsed_rows: list[dict], catalog: RegionCatalog) -> 
     categories = {}
     for category_id, meta in CATEGORY_META.items():
         collected_items = list(collected[category_id].values())
-        collected_keys = {(item["land"].strip().lower(), item["kennid"]) for item in collected_items}
-        catalog_total = len(catalog.by_category.get(category_id, []))
-        # Prefer listing collected regions with real names; include zeros from catalog
-        # only when the category is small enough to stay readable.
+        countable_collected = [item for item in collected_items if item.get("countable", True)]
+        catalog_total = len(catalog.countable_by_category.get(category_id, []))
         items = sorted(
             collected_items,
             key=lambda item: (-item["count"], item["code"].lower(), item["name"].lower()),
         )
+        # For small categories (e.g. country codes), also list missing catalog entries.
         if catalog_total and catalog_total <= 80:
-            for entry in catalog.by_category[category_id]:
-                key = (entry.land, entry.kennid)
-                if key in collected_keys:
+            collected_codes = {
+                (item["land"].strip().lower(), item["code"]) for item in collected_items
+            }
+            for entry in catalog.countable_by_category[category_id]:
+                key = (entry.land, entry.code)
+                if key in collected_codes:
                     continue
                 items.append(
                     {
@@ -444,21 +484,23 @@ def build_region_categories(parsed_rows: list[dict], catalog: RegionCatalog) -> 
                         "label": f"{entry.code} — {entry.name}" if entry.code != entry.name else entry.code,
                         "count": 0,
                         "collected": False,
+                        "countable": True,
                         "firstSeenDate": None,
                         "points": entry.points,
                         "share": 0.0,
+                        "progress": 0.0,
                     }
                 )
-        total = sum(item["count"] for item in items)
         for item in items:
-            item["share"] = round(item["count"] / total, 4) if total else 0.0
+            item["progress"] = 1.0 if item["count"] > 0 else 0.0
+            item["share"] = item["progress"]
         categories[category_id] = {
             "id": category_id,
             "label": meta["label"],
-            "uniqueCount": len(collected_items),
+            "uniqueCount": len(countable_collected),
             "catalogTotal": catalog_total,
-            "completion": round(len(collected_items) / catalog_total, 4) if catalog_total else None,
-            "totalSightings": total,
+            "completion": round(len(countable_collected) / catalog_total, 4) if catalog_total else None,
+            "totalSightings": sum(item["count"] for item in collected_items),
             "items": items,
         }
     return categories
